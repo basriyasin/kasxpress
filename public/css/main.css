@@ -116,6 +116,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+.lang-menu {
+    width: 16px;
+    margin-right: 5px !important;
+}
+
+
 @media (max-width: 768px) {
   #header #logo h1 {
     font-size: 26px;
@@ -240,7 +246,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu ul li {
-  min-width: 180px;
+  /*min-width: 180px;*/
+  min-width: 75px;
 }
 
 /* Nav Menu Arrows */
@@ -934,12 +941,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 #footer {
   background: #343b40;
   padding: 30px 0;
-  color: #fff;
+  color: #cccccc;
   font-size: 14px;
 }
 
 #footer .copyright {
-  text-align: center;
+  text-align: left;
 }
 
 #footer .credits {
@@ -947,4 +954,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   font-size: 13px;
   color: #ccc;
+}
+
+#footer .footer-list {
+    list-style: none;
+    text-color: #ccccc;
+}
+
+#footer .footer-list ul li:first-child {
+    text-color: #2dca98;
 }
