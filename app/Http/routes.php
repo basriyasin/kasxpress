@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/lang/{lang}', ['as' => 'menu.setLang', 'uses' => 'HomeController@setLang']);
+Route::get('/', ['as' => 'front.index' ,'uses' => 'HomeController@index']);
