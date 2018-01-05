@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05-Jan-2018, 03:56:20
+    Author     : Basri Yasin
+*/
+
+.hero-bg-1 {
+    background: url(../img/hero-bg.jpg);    
+}
+
+.hero-bg-2 {
+    background: white fixed;
+}
+
+.hero-bg-3 {
+    background: url(../img/bg-3.jpg);
+}
+
+.hero-bg-4 {
+    background: url(../img/bg-4.jpg) fixed top center;
+    background-size: contain;
+}   
+
+.hero-bg-white {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAUSURBVHjaYvj///9/AAAAAP//AwAJ+wP9PyYcSAAAAABJRU5ErkJggg==') !important; 
+    background-repeat: repeat !important;
+}
