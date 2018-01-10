@@ -1053,7 +1053,7 @@ select.form-control {
     -webkit-appearance: none;  /*Removes default chrome and safari style*/
     -moz-appearance: none;  /*Removes default style Firefox*/
     background: url(/img/icon/down-white.png) no-repeat right;
-    background-size: 5%;
+    background-size: 2%;
     cursor: pointer;
 }
 
@@ -1089,4 +1089,60 @@ select.form-control {
 
 .text-left {
     text-align: left;
+}
+
+
+.feature-2 {
+    background: #eee;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.feature-2 ul {
+    text-align: left;
+    list-style: none;
+    padding: 0px;
+}
+.feature-2 ul > li {
+    background: url(/img/icon/check.png) no-repeat left top;
+    padding: 5px 0px 20px 40px;
+}
+
+
+#section {
+    padding: 70px 70px !important;
+    color: #000 !important;
+}
+
+#section:nth-child(even) {
+    color: #000 !important;
+    background: #dedede;
+}
+
+#section .form-control {
+    color: #000;
+    border-bottom: 1px solid #000 !important;
+}
+
+#section .form-control:focus {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+#section .form-control::placeholder {
+    color: #000;    
+}
+
+#section select.form-control {
+    height: calc(2.25rem + 5px) !important;    
+    -webkit-appearance: none;  /*Removes default chrome and safari style*/
+    -moz-appearance: none;  /*Removes default style Firefox*/
+    background: url(/img/icon/down-black.png) no-repeat right;
+    background-size: 2%;
+    cursor: pointer;
+}
+
+
+.no-shadows {
+    box-shadow: none !important;
 }

@@ -1,0 +1,47 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05-Jan-2018, 19:35:10
+    Author     : Basri Yasin
+*/
+
+.hero-bg-5 {
+    background: url(../img/bg-5.jpg);    
+}
+
+.hero-bg-6 {
+    background: url(../img/bg-6.jpg);
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: top center !Important;    
+}
+
+#box-2 .icon {
+    font-size: 3em;
+    text-align: center;
+    width: 100%;
+}
+
+
+#box-2 .title {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.simulasi-cicilan .item {
+    margin-bottom: 20px;
+}
+
+.simulasi-cicilan .item > h5{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.simulasi-cicilan .item > span{
+    font-size: 14px;
+    font-weight: 100;
+}

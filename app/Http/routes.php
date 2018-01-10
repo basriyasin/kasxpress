@@ -14,3 +14,4 @@
 
 Route::get('/lang/{lang}', ['as' => 'menu.setLang', 'uses' => 'HomeController@setLang']);
 Route::get('/', ['as' => 'front.index' ,'uses' => 'HomeController@index']);
+Route::get('/borrow', ['as' => 'front.borrow' ,'uses' => 'HomeController@borrowPage']);

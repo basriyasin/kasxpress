@@ -23,4 +23,8 @@ class HomeController extends Controller {
     protected function index() {
         return view('front.index');
     }
+    
+    protected function borrowPage() {
+        return view('front.borrow');
+    }
 }

@@ -7,8 +7,8 @@
 
         <nav id="nav-menu-container">
             <ul class="nav-menu">
-                <li class="menu-active"><a href="#about">{{ Lang::get('menu.front.home') }}</a></li>
-                <li><a href="#about">{{ trans('menu.front.pinjaman_karyawan') }}</a></li>
+                <li class="menu-active"><a href="{{ route('front.index') }}">{{ Lang::get('menu.front.home') }}</a></li>
+                <li><a href="{{ route('front.borrow') }}">{{ trans('menu.front.pinjaman_karyawan') }}</a></li>
                 <li><a href="#services">{{ trans('menu.front.pendanaan') }}</a></li>
                 <li><a href="#portfolio">{{ trans('menu.front.cara_kerja') }}</a></li>
                 <li><a href="#portfolio">{{ trans('menu.front.tentang_kami') }}</a></li>
