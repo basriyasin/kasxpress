@@ -1253,6 +1253,9 @@ select.form-control {
     width: 8.33333%;
 }
 
+.large-2 {
+    width: 15.33333%;
+}
 .about-title {
     font-size: 32px;
     color: #111;

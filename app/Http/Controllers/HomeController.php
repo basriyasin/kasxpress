@@ -31,4 +31,8 @@ class HomeController extends Controller {
     protected function aboutPage(){
         return view('front.about');
     }
+    
+    protected function howItWorksPage(){
+        return view('front.howItWorks');
+    }
 }
