@@ -16,3 +16,4 @@ Route::get('/lang/{lang}', ['as' => 'menu.setLang' , 'uses' => 'HomeController@s
 Route::get('/',            ['as' => 'front.index'  , 'uses' => 'HomeController@index']);
 Route::get('/borrow',      ['as' => 'front.borrow' , 'uses' => 'HomeController@borrowPage']);
 Route::get('/about',       ['as' => 'front.about'  , 'uses' => 'HomeController@aboutPage']);
+Route::get('/how-it-works',       ['as' => 'front.how-it-works'  , 'uses' => 'HomeController@howItWorksPage']);

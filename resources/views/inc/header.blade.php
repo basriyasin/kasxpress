@@ -16,8 +16,8 @@
                 <li>
                     <a href="#">{{ trans('menu.front.pendanaan') }}</a>
                 </li>
-                <li>
-                    <a href="#">{{ trans('menu.front.cara_kerja') }}</a>
+                <li class="{{ Request::route()->getName() != 'front.how-it-works' ?: 'menu-active'}}">
+                    <a href="{{ route('front.how-it-works') }}">{{ trans('menu.front.cara_kerja') }}</a>
                 </li>
                 <li class="{{ Request::route()->getName() != 'front.about' ?: 'menu-active'}}">
                     <a href="{{ route('front.about') }}">{{ trans('menu.front.tentang_kami') }}</a>
