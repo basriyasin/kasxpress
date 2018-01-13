@@ -29,3 +29,7 @@ and open the template in the editor.
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAUSURBVHjaYvj///9/AAAAAP//AwAJ+wP9PyYcSAAAAABJRU5ErkJggg==') !important; 
     background-repeat: repeat !important;
 }
+
+.portfolio-bg {
+    background: url(../img/portfolio-bg-3.jpg);  
+}

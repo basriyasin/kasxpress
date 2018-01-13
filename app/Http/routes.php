@@ -14,3 +14,5 @@
 
 Route::get('/lang/{lang}', ['as' => 'menu.setLang', 'uses' => 'HomeController@setLang']);
 Route::get('/', ['as' => 'front.index' ,'uses' => 'HomeController@index']);
+
+Route::get('/portfolio', ['as' => 'portfolio.index', 'uses' => 'PortfolioController@index']);
