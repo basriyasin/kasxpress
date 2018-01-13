@@ -11,7 +11,7 @@
                 <li><a href="{{ route('front.borrow') }}">{{ trans('menu.front.pinjaman_karyawan') }}</a></li>
                 <li><a href="#services">{{ trans('menu.front.pendanaan') }}</a></li>
                 <li><a href="#portfolio">{{ trans('menu.front.cara_kerja') }}</a></li>
-                <li><a href="#portfolio">{{ trans('menu.front.tentang_kami') }}</a></li>
+                <li><a href="{{route('portfolio.index')}}">{{ trans('menu.front.tentang_kami') }}</a></li>
                 <li><a href="#portfolio">{{ trans('menu.front.daftar') }}</a></li>
                 <li class="menu-has-children">
                     <a href="#team">
