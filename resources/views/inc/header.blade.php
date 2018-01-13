@@ -13,9 +13,6 @@
                 <li class="{{ Request::route()->getName() != 'front.borrow' ?: 'menu-active'}}">
                     <a href="{{ route('front.borrow') }}">{{ trans('menu.front.pinjaman_karyawan') }}</a>
                 </li>
-                <li>
-                    <a href="#">{{ trans('menu.front.pendanaan') }}</a>
-                </li>
                 <li class="{{ Request::route()->getName() != 'front.how-it-works' ?: 'menu-active'}}">
                     <a href="{{ route('front.how-it-works') }}">{{ trans('menu.front.cara_kerja') }}</a>
                 </li>
