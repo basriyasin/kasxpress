@@ -12,7 +12,7 @@
 */
 
 
-Route::get('/lang/{lang}', ['as' => 'menu.setLang', 'uses' => 'HomeController@setLang']);
-Route::get('/', ['as' => 'front.index' ,'uses' => 'HomeController@index']);
-Route::get('/borrow', ['as' => 'front.borrow' ,'uses' => 'HomeController@borrowPage']);
-Route::get('/portfolio', ['as' => 'portfolio.index', 'uses' => 'PortfolioController@index']);
+Route::get('/lang/{lang}', ['as' => 'menu.setLang' , 'uses' => 'HomeController@setLang']);
+Route::get('/',            ['as' => 'front.index'  , 'uses' => 'HomeController@index']);
+Route::get('/borrow',      ['as' => 'front.borrow' , 'uses' => 'HomeController@borrowPage']);
+Route::get('/about',       ['as' => 'front.about'  , 'uses' => 'HomeController@aboutPage']);

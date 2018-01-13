@@ -7,14 +7,26 @@
 
         <nav id="nav-menu-container">
             <ul class="nav-menu">
-                <li class="menu-active"><a href="{{ route('front.index') }}">{{ Lang::get('menu.front.home') }}</a></li>
-                <li><a href="{{ route('front.borrow') }}">{{ trans('menu.front.pinjaman_karyawan') }}</a></li>
-                <li><a href="#services">{{ trans('menu.front.pendanaan') }}</a></li>
-                <li><a href="#portfolio">{{ trans('menu.front.cara_kerja') }}</a></li>
-                <li><a href="{{route('portfolio.index')}}">{{ trans('menu.front.tentang_kami') }}</a></li>
-                <li><a href="#portfolio">{{ trans('menu.front.daftar') }}</a></li>
+                <li class="{{ Request::route()->getName() != 'front.index' ?: 'menu-active'}} ">
+                    <a href="{{ route('front.index') }}">{{ Lang::get('menu.front.home') }}</a>
+                </li>
+                <li class="{{ Request::route()->getName() != 'front.borrow' ?: 'menu-active'}}">
+                    <a href="{{ route('front.borrow') }}">{{ trans('menu.front.pinjaman_karyawan') }}</a>
+                </li>
+                <li>
+                    <a href="#">{{ trans('menu.front.pendanaan') }}</a>
+                </li>
+                <li>
+                    <a href="#">{{ trans('menu.front.cara_kerja') }}</a>
+                </li>
+                <li class="{{ Request::route()->getName() != 'front.about' ?: 'menu-active'}}">
+                    <a href="{{ route('front.about') }}">{{ trans('menu.front.tentang_kami') }}</a>
+                </li>
+                <li>
+                    <a href="#">{{ trans('menu.front.daftar') }}</a>
+                </li>
                 <li class="menu-has-children">
-                    <a href="#team">
+                    <a href="#">
                         <img class="lang-menu" src="{{ asset('img/flag/').'/'.Session::get('lang').'.png' }}" />
                         {{ strtoupper(Session::get('lang')) }}
                     </a>
