@@ -4,15 +4,22 @@
             <div class="row">                
                     <ul class="footer-list col-md-4">
                         <li>KASXPRESS</li>
-                        <li><a href="/about">Tentang Kami</a></li>
-                        <li><a href="/career" href="/career">Karir</a></li>
-                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="{{ route('front.about') }}">Tentang Kami</a></li>
+                        <li><a href="#">Karir</a></li>
+                        <li><a href="#">FAQ</a></li>
                     </ul>
                     <ul class="footer-list col-md-4">
                         <li>Pelayanan</li>
-                        <li><a routerlink="/borrow" href="/borrow">Pinjaman</a></li>
-                        <li><a routerlink="/invest" href="/invest">Pendanaan</a></li>
-                        <li><a routerlink="/refer" href="/refer">Partner</a></li>
+                        <li><a href="{{ route('front.borrow') }}">Pinjaman</a></li>
+                        <li><a href="{{ route('front.index') }}">Pendanaan</a></li>
+                        <li><a href="#">Partner</a></li>
+                    </ul>
+                    <ul class="footer-list col-md-4 text-right">
+                        <li>Kontak Kami</li>
+                        <li><a href="#">Perumahan Citra</a></li>
+                        <li><a href="#">Jl. Kesayangan IV, Kalideres</a></li>
+                        <li><a href="#">Jakarta Barat</a></li>
+                        <li><a href="#">Indonesia</a></li>
                     </ul>
             </div>
         </div>

@@ -17,3 +17,10 @@ Route::get('/',            ['as' => 'front.index'  , 'uses' => 'HomeController@i
 Route::get('/borrow',      ['as' => 'front.borrow' , 'uses' => 'HomeController@borrowPage']);
 Route::get('/about',       ['as' => 'front.about'  , 'uses' => 'HomeController@aboutPage']);
 Route::get('/how-it-works',       ['as' => 'front.how-it-works'  , 'uses' => 'HomeController@howItWorksPage']);
+
+Route::group(['prefix' => 'investor'],  function() {
+    Route::get('account',   ['as' => 'investor.account',    'uses' => 'InvestorController@account']);
+    Route::get('invest',    ['as' => 'investor.invest',     'uses' => 'InvestorController@invest']);
+    Route::get('deposit',   ['as' => 'investor.deposit',    'uses' => 'InvestorController@deposit']);
+    Route::get('portfolio', ['as' => 'investor.portfolio',  'uses' => 'InvestorController@portfolio']);
+});
