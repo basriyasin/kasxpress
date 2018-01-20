@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17-Jan-2018, 21:19:17
+    Author     : BzKurozaki
+*/
+
+
+header {
+    background: rgba(52, 59, 64, 0.9) !important;
+    position: relative !important;
+}
+
+.detail-box {
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px 1px #eee;
+    border-radius: 5px;
+}
+
+.detail-box .header {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.detail-box .item {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.detail-box .item .title {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left !important;
+    border: none;
+    margin-bottom: 5px;
+}
+
+.detail-box .item .title span {
+    text-align: right;
+}
+
+.detail-box .footer {
+    border-top: 1px solid #eee !important;
+}
+
+.detail-box .footer .item {
+    padding: 15px 15px 0px 15px;
+    margin: 0px;
+}
+
+
