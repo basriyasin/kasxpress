@@ -56,3 +56,142 @@ header {
 }
 
 
+
+/**
+ * Invest page
+ */
+.publication-date {
+    border-bottom: 3px solid #2dca98;
+    border-radius: 2px;
+}
+
+.publication-date .month {
+    background-color: #2dca98;
+    display: block;
+    padding: 3px 0px;
+    color: white;
+}
+
+.publication-date .day {
+    font-size: 1.4em;
+    background: white;
+    display: block;
+    color:#2dca98;
+}
+
+.rating {
+    display: block;
+    color: #2dca98;
+    background: white;
+    border-bottom: 3px solid #2dca98;
+    border-top: 3px solid #2dca98;
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+
+.progress-bar {
+    background-color: #2dca98;
+}
+
+
+table th, table td {
+
+    vertical-align: middle;
+    height: 100px;
+    vertical-align: middle !important;
+
+}
+
+
+
+
+.margin-right-20 {
+    margin-right: 20px;
+}
+
+
+div.pagination a {
+    padding: 5px 10px;
+    background: #fff;
+    border: 0.5px solid #eee;
+}
+
+
+div.pagination a.active, a:hover {
+    color: #fff !important;
+    background: #2dca98 !important;
+}
+
+
+div.pagination a:first-child {
+    border-radius: 3px 0px 0px 3px !important; 
+}
+
+
+div.pagination a:last-child {
+    border-radius: 0px 3px 3px 0px !important; 
+}
+
+.rating-group .rating {
+    font-size: 2em;
+    line-height: 1em;
+    padding: 10px;
+    color: #fff;
+    border: none !important;
+    min-width: 74px;
+    
+}
+.rating .rate {
+    font-size: 0.3em;
+    display: block;
+}
+
+.rating.rating-aa {
+    background: #99cccc;
+}
+
+.rating.rating-a {
+    background: #336666;
+}
+
+.rating.rating-bb {
+    background: #003333;
+}
+
+.rating.rating-b {
+    background: #cccc99;
+}
+
+.rating.rating-cc {
+    background: #dddd77;
+}
+
+.rating.rating-c {
+    background: #daca00;
+}
+
+.rating.rating-d {
+    background: #9a9a44;
+}
+
+.padding-bottom-50 {
+    padding-bottom: 50px !important;
+}
+
+.margin-vertical-50 {
+    margin: 50px 0px !important;
+}
+
+.margin-top-20 {
+    margin-top: 20px !important;
+}
+
+.small-rate-table td, th {
+    padding: 0px !important;
+    height: 0 !important;
+    text-align: center;
+}
+
+.no-padding-left{
+    padding-left: 0px !important;
+}

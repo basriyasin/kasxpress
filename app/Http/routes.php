@@ -19,6 +19,7 @@ Route::get('/about',       ['as' => 'front.about'  , 'uses' => 'HomeController@a
 Route::get('/how-it-works',       ['as' => 'front.how-it-works'  , 'uses' => 'HomeController@howItWorksPage']);
 
 Route::group(['prefix' => 'investor'],  function() {
+    Route::get('/',         ['as' => 'investor.account',    'uses' => 'InvestorController@account']);
     Route::get('account',   ['as' => 'investor.account',    'uses' => 'InvestorController@account']);
     Route::get('invest',    ['as' => 'investor.invest',     'uses' => 'InvestorController@invest']);
     Route::get('deposit',   ['as' => 'investor.deposit',    'uses' => 'InvestorController@deposit']);
