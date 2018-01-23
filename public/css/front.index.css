@@ -25,6 +25,11 @@ and open the template in the editor.
     background-size: contain;
 }   
 
+.hero-bg-5 {
+    background: url(../img/building.jpg) fixed top center;
+    background-size: contain;
+} 
+
 .hero-bg-white {
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAUSURBVHjaYvj///9/AAAAAP//AwAJ+wP9PyYcSAAAAABJRU5ErkJggg==') !important; 
     background-repeat: repeat !important;
