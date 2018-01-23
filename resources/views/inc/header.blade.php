@@ -20,7 +20,7 @@
                     <a href="{{ route('front.about') }}">{{ trans('menu.front.tentang_kami') }}</a>
                 </li>
                 <li>
-                    <a href="#">{{ trans('menu.front.daftar') }}</a>
+                    <a href="{{ route('front.login') }}">{{ trans('menu.front.daftar') }}</a>
                 </li>
                 <li class="menu-has-children">
                     <a href="#">

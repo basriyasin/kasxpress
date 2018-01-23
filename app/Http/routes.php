@@ -18,10 +18,23 @@ Route::get('/borrow',      ['as' => 'front.borrow' , 'uses' => 'HomeController@b
 Route::get('/about',       ['as' => 'front.about'  , 'uses' => 'HomeController@aboutPage']);
 Route::get('/how-it-works',       ['as' => 'front.how-it-works'  , 'uses' => 'HomeController@howItWorksPage']);
 
-Route::group(['prefix' => 'investor'],  function() {
-    Route::get('/',         ['as' => 'investor.account',    'uses' => 'InvestorController@account']);
-    Route::get('account',   ['as' => 'investor.account',    'uses' => 'InvestorController@account']);
-    Route::get('invest',    ['as' => 'investor.invest',     'uses' => 'InvestorController@invest']);
-    Route::get('deposit',   ['as' => 'investor.deposit',    'uses' => 'InvestorController@deposit']);
-    Route::get('portfolio', ['as' => 'investor.portfolio',  'uses' => 'InvestorController@portfolio']);
+Route::group(['middleware' => 'auth'], function(){
+    
+    Route::get('/logout',        ['as' => 'front.login', 'uses' => 'Auth\AuthController@logout']);
+    
+        Route::group(['prefix' => 'investor'],  function() {
+            Route::get('/',          ['as' => 'investor.account',    'uses' => 'InvestorController@account']);
+            Route::get('account',   ['as' => 'investor.account',    'uses' => 'InvestorController@account']);
+            Route::get('invest',    ['as' => 'investor.invest',     'uses' => 'InvestorController@invest']);
+            Route::get('deposit',   ['as' => 'investor.deposit',    'uses' => 'InvestorController@deposit']);
+            Route::get('portfolio', ['as' => 'investor.portfolio',  'uses' => 'InvestorController@portfolio']);
+        });
+
+});
+
+Route::group(['middleware' => 'guest'], function(){
+    Route::get('/login',        ['as' => 'front.login', 'uses' => 'HomeController@showLogin']);
+    Route::post('login',        ['uses' => 'Auth\AuthController@postLogin']);
+    Route::get('/register',     ['as' => 'front.register', 'uses' => 'HomeController@showRegister']);
+    Route::post('/register',    ['as' => 'front.register', 'uses' => 'Auth\AuthController@postRegister']);
 });
