@@ -23,12 +23,13 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('/logout',        ['as' => 'front.login', 'uses' => 'Auth\AuthController@logout']);
     
         Route::group(['prefix' => 'investor'],  function() {
-            Route::get('',          ['as' => 'investor.account',    'uses' => 'InvestorController@account']);
+            Route::get('/',          ['as' => 'investor.account',    'uses' => 'InvestorController@account']);
             Route::get('account',   ['as' => 'investor.account',    'uses' => 'InvestorController@account']);
             Route::get('invest',    ['as' => 'investor.invest',     'uses' => 'InvestorController@invest']);
             Route::get('deposit',   ['as' => 'investor.deposit',    'uses' => 'InvestorController@deposit']);
             Route::get('portfolio', ['as' => 'investor.portfolio',  'uses' => 'InvestorController@portfolio']);
         });
+
 });
 
 Route::group(['middleware' => 'guest'], function(){
