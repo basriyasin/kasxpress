@@ -21,7 +21,7 @@
                 </li>
                 @if(!Auth::check())
                 <li>
-                    <a href="{{ route('front.login') }}">{{ trans('menu.front.daftar') }}</a>
+                    <a href="{{ route('front.login') }}">{{ trans('menu.front.masuk') }}</a>
                 </li>
                 @endif
                 <li class="menu-has-children">

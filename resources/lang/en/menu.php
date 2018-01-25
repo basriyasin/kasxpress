@@ -7,5 +7,6 @@ return [
         'cara_kerja'        => 'How it work',
         'tentang_kami'      => 'About Us',
         'daftar'            => 'Register',
+        'masuk'             => 'Log In',
     ]
 ];
