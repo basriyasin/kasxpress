@@ -70,7 +70,7 @@ use AuthenticatesAndRegistersUsers,
                     'password' => bcrypt($data['password']),
                     'mobile_number' => $data['mobile_number'],
                     'status' => 0,
-                    'role' => 'investor',
+                    'role' => $data['role'],
                         /**
                          * Status Description
                          * 0 : Not confirmed
@@ -133,8 +133,13 @@ use AuthenticatesAndRegistersUsers,
         }
 
         Auth::guard($this->getGuard())->login($this->create($request->all()));
-
-        return redirect($this->redirectPath());
+        
+        return redirect()
+                ->intended(
+                    Auth::user()->role == 'investor' 
+                        ? $this->investorDashboard 
+                        : $this->borrowerDashboard
+                );
     }
 
 }

@@ -21,7 +21,7 @@
                         <h5 class="title f-18 m-bottom-0">Dapatkan return sampai dengan</h5>
                         <p class="title f-18 black m-bottom-0"><span class="f-40 blue">20%</span> p.a. dari pokok pinjaman</p>
                         <small class="f-13 grey block m-bottom-20">*sampai dengan 6 bulan pendanaan, pre tax, asumsi pendanaan dan tidak ada penarikan dini.</small>
-                        <button class="btn btn-blue" data-toggle="modal" data-target="#register-modal">Berikan Pinjaman</button>
+                        <button id="register-as" role-set="investor" class="btn btn-blue" data-toggle="modal" data-target="#register-modal">Berikan Pinjaman</button>
                     </div>
 
                     <div class="col-lg-5 col-md-5 col-center">
@@ -29,7 +29,7 @@
                         <h5 class="title f-18 m-bottom-0">Dapatkan pinjaman mulai dari</h5>
                         <p class="title f-18 black m-bottom-0"><span class="f-40 blue">0.9%</span> per bulan atas nilai pinjaman </p>
                         <small class="f-13 grey block m-bottom-20">*Setiap orang mungkin bisa berbeda, bergantung pada penilaian individu peminjam.</small>
-                        <button class="btn btn-green" data-toggle="modal" data-target="#register-modal">Ajukan Pinjaman</button>
+                        <button id="register-as" role-set="borrower" class="btn btn-green" data-toggle="modal" data-target="#register-modal">Ajukan Pinjaman</button>
                     </div>
                 </div>
 
@@ -58,6 +58,7 @@
 
                 <form class="form-default custom-frm2" action="{{ url('/register')}}" method="post" ajax-form="true">
                     {!! csrf_field() !!}
+                    <input type="hidden" name="role" value="">
                     <div class="row">
                         <div class="col-md-3 text-right">
                             <label for="middle-label" class="text-right f-13">Nama Lengkap *</label>
@@ -141,3 +142,16 @@
     </div>
 </div>
 <!--End of Modal -->
+
+
+@section('script')
+<script>
+    $(document)
+            .ready(function () {
+                $('button[id^="register-as"]')
+                        .click(function () {
+                            $('input[name="role"').attr('value' ,$(this).attr('role-set'));
+                        });
+            });
+</script>
+@endsection

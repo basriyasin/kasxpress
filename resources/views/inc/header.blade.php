@@ -19,9 +19,11 @@
                 <li class="{{ Request::route()->getName() != 'front.about' ?: 'menu-active'}}">
                     <a href="{{ route('front.about') }}">{{ trans('menu.front.tentang_kami') }}</a>
                 </li>
+                @if(!Auth::check())
                 <li>
                     <a href="{{ route('front.login') }}">{{ trans('menu.front.daftar') }}</a>
                 </li>
+                @endif
                 <li class="menu-has-children">
                     <a href="#">
                         <img class="lang-menu" src="{{ asset('img/flag/').'/'.Session::get('lang').'.png' }}" />
@@ -29,15 +31,23 @@
                     </a>
                     <ul>
                         @foreach(config('app.supported_locale') as $v)
-                            <li>
-                                <a href="{{ route('menu.setLang', $v) }}">
-                                    <img class="lang-menu" src="{{ asset('img/flag/').'/'.$v.'.png' }}" /> {{ strtoupper($v) }}
-                                </a>
-                            </li>
+                        <li>
+                            <a href="{{ route('menu.setLang', $v) }}">
+                                <img class="lang-menu" src="{{ asset('img/flag/').'/'.$v.'.png' }}" /> {{ strtoupper($v) }}
+                            </a>
+                        </li>
                         @endforeach
                     </ul>
                 </li>
-            </ul>
+                @if (Auth::check())
+                <li class="menu-has-children">
+                    <a href="#">{{ Auth::user()->name }}</a>
+                    <ul>
+                        <li><a href="#">{{ trans('menu.settings') }}</a></li>
+                        <li><a href="{{ url('/logout') }}">{{ trans('menu.signout') }}</a></li>
+                    </ul>
+                </li>
+                @endif
         </nav>
     </div>
 </header>
