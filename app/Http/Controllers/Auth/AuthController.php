@@ -70,7 +70,7 @@ use AuthenticatesAndRegistersUsers,
                     'password' => bcrypt($data['password']),
                     'mobile_number' => $data['mobile_number'],
                     'status' => 0,
-                    'role' => 'investor',
+                    'role' => $data['role'],
                         /**
                          * Status Description
                          * 0 : Not confirmed
