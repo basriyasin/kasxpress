@@ -23,7 +23,7 @@ class InvestorController extends Controller {
     
     
     protected function deposit() {
-        return view('errors.404');
+        return view('investor.deposit');
     }
     
     
