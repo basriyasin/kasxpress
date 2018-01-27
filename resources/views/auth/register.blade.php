@@ -9,9 +9,8 @@
 
 <section id="hero" class="hero-bg-white">
     <div class="hero-container no-bg">
-        <div class="col-md-12 col-center text-lg-left white" style="padding-left: 80px; padding-right: 80px;">
-            <div>
-                <div class="section-header">
+        <div class="col-md-12 col-center text-lg-left white">
+                <div class="section-header col-center col-md-12">
                     <h3 class="about-title"> Daftar</h3>
                     <div class="large-2 medium-1 small-4 columns small-centered border-green margin-bottom-20"></div>
                 </div>
@@ -21,7 +20,7 @@
                         <h5 class="title f-18 m-bottom-0">Dapatkan return sampai dengan</h5>
                         <p class="title f-18 black m-bottom-0"><span class="f-40 blue">20%</span> p.a. dari pokok pinjaman</p>
                         <small class="f-13 grey block m-bottom-20">*sampai dengan 6 bulan pendanaan, pre tax, asumsi pendanaan dan tidak ada penarikan dini.</small>
-                        <button id="register-as" role-set="investor" class="btn btn-blue" data-toggle="modal" data-target="#register-modal">Berikan Pinjaman</button>
+                        <button class="btn btn-blue" onclick="showModal('investor')">Berikan Pinjaman</button>
                     </div>
 
                     <div class="col-lg-5 col-md-5 col-center">
@@ -29,12 +28,9 @@
                         <h5 class="title f-18 m-bottom-0">Dapatkan pinjaman mulai dari</h5>
                         <p class="title f-18 black m-bottom-0"><span class="f-40 blue">0.9%</span> per bulan atas nilai pinjaman </p>
                         <small class="f-13 grey block m-bottom-20">*Setiap orang mungkin bisa berbeda, bergantung pada penilaian individu peminjam.</small>
-                        <button id="register-as" role-set="borrower" class="btn btn-green" data-toggle="modal" data-target="#register-modal">Ajukan Pinjaman</button>
+                        <button class="btn btn-green" onclick="showModal('peminjam')">Ajukan Pinjaman</button>
                     </div>
                 </div>
-
-
-            </div>
 
         </div>
 
@@ -49,7 +45,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Pendaftaran Pendana</h5>
+                <h5 class="modal-title" id="modalTitle"></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -126,6 +122,7 @@
                             </div>
                         </div>
                     </div>
+                    <input name="role" id="role" type="hidden">
                     <div class="row">
                         <div class="col-md-3 text-left">
                             <button type="submit" class="btn btn-primary btn-blue"> Buat Akun</button>
@@ -146,12 +143,17 @@
 
 @section('script')
 <script>
-    $(document)
-            .ready(function () {
-                $('button[id^="register-as"]')
-                        .click(function () {
-                            $('input[name="role"').attr('value' ,$(this).attr('role-set'));
-                        });
-            });
+    
+    function showModal(type){
+        if(type == 'investor'){
+            $('#modalTitle').html('Pendaftaran Investor');
+            $('#role').val('investor');
+        } else {
+            $('#modalTitle').html('Pendaftaran Peminjam');
+            $('#role').val('peminjam');
+        }
+        $('#register-modal').modal('show');
+    }
+
 </script>
 @endsection
