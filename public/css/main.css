@@ -1399,6 +1399,148 @@ select.form-control {
     font-size: 14px;
 }
 
+.font-gray {
+    color: gray;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.pinjamanDetail {
+    display: table;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.pinjamanDetail .item {
+    height: 200px;
+    position: relative;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    background-position: 0 50px;
+    box-shadow: 1px 0 5px 1px rgba(0,0,0,.2);
+    display: block;
+    width: 100%;
+}
+
+.pinjamanDetail .item .nominal, .pinjamanDetail .item .percen {
+    height: 70%;
+    color: #fff;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.pinjamanDetail .item .dest {
+    color: #fff;
+}
+
+.nominal, .pinjamanDetail .item .dest {
+    height: 30%;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.pinjamanDetail .item .percen p {
+    font-size: 40px;
+    color: #fff;
+}
+
+.pinjamanDetail .item .dest p, .pinjamanDetail .item .nominal p, .pinjamanDetail .item .percen p {
+    position: absolute;
+    top: 50%;
+    margin-bottom: -50%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align: center;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0 .5em;
+}
+
+.pinjamanDetail .item .dest p.uppersubtext, .pinjamanDetail .item .nominal p.uppersubtext, .pinjamanDetail .item .percen p.uppersubtext {
+    position: absolute;
+    top: 75%;
+    margin-bottom: -75%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%,-75%);
+    transform: translate(-50%,-75%);
+    text-align: center;
+    font-size: .85em;
+    font-style: italic;
+}
+
+.pinjamanDetail .item .dest p.subtext, .pinjamanDetail .item .nominal p.subtext, .pinjamanDetail .item .percen p.subtext {
+    position: absolute;
+    top: 90%;
+    margin-bottom: -90%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%,-90%);
+    transform: translate(-50%,-90%);
+    text-align: center;
+    font-size: .85em;
+    font-style: italic;
+}
+
+.cicilanPinjaman thead{
+    padding: 0;
+    color: #555;
+    color: #399ee6;
+    border-top: 1px solid #399ee6;
+    border-bottom: 3px solid #399ee6;
+    vertical-align: middle;
+    font-size: 12px;
+    text-align: center;
+}
+
+.cicilanPinjaman table{
+    border-bottom: 2px solid #399ee6;
+}
+
+.cicilanPinjaman thead tr{
+    height: 60px;
+}
+
+.cicilanPinjaman tbody span{
+    font-size: 12px;
+    text-align: left;
+}
+
+
+.highLevel1{
+    height: 60px;
+}
+
+.centerTextBox p {
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    font-size: 12px;
+}
+
+.icon-green {
+    color : #4a9c54;
+}
+
+.icon-green2 {
+    color: #a3c14f;
+}
+
+.icon-red {
+    color: red;
+}
+=======
 #infoAccount .transferInfo {
     padding: 10px;
     margin-bottom: 15px;
