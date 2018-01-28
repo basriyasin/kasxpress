@@ -32,9 +32,17 @@ Route::group(['middleware' => 'auth'], function(){
 
 });
 
+
 Route::group(['middleware' => 'guest'], function(){
     Route::get('/login',        ['as' => 'front.login', 'uses' => 'HomeController@showLogin']);
     Route::post('login',        ['uses' => 'Auth\AuthController@postLogin']);
     Route::get('/register',     ['as' => 'front.register', 'uses' => 'HomeController@showRegister']);
     Route::post('/register',    ['as' => 'front.register', 'uses' => 'Auth\AuthController@postRegister']);
+    
+    Route::group(['prefix' => 'account'],  function() {
+        Route::get('/register/{email}',    ['as' => 'account.pleaseConfirm',   'uses' => 'Auth\AuthController@pleaseConfirm']);
+        Route::get('/confirm/{email}',     ['as' => 'account.confirmEmail',    'uses' => 'Auth\AuthController@confirmEmail']);
+    });
+    
 });
+

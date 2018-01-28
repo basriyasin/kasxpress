@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Mail;
 
 class AuthController extends Controller {
     /*
@@ -132,14 +133,48 @@ use AuthenticatesAndRegistersUsers,
             );
         }
 
-        Auth::guard($this->getGuard())->login($this->create($request->all()));
-        
+        // Auth::guard($this->getGuard())->login($this->create($request->all()));
+        $this->create($request->all());
+        $user = (object)$request->all();
+        $this->sendRegisterConfirmationMail($user);
         return redirect()
-                ->intended(
-                    Auth::user()->role == 'investor' 
-                        ? $this->investorDashboard 
-                        : $this->borrowerDashboard
-                );
+                ->route('account.pleaseConfirm', $user->email);
     }
 
+    
+    
+    
+    private function sendRegisterConfirmationMail ($user) {
+        Mail::send('emails.confirm_registration', ['user' => $user], function ($m) use ($user) {
+            $m->from('kasxpress@basriyasin.com', 'KasXpress');
+            $m->to($user->email, $user->name)->subject('Confirm your email.');
+        });
+    }
+    
+    
+    
+    protected function pleaseConfirm(Request $r, $email) {
+        $user = User::where('email', $email)->firstOrFail();
+        
+        return $user
+                ? view('auth.please_confirm')->with('user', (object)$user)
+                : view('errors.404');
+    }
+
+
+
+
+    public function confirmEmail(Request $r, $email) {
+        
+        if($user = User::findOrFail('email', $email)->firstOrFail()) {
+            $user->status = 1;
+            $user->save();
+            return view('auth.account_confirmed')
+                    ->with('user', (object)['email' => 'lala.lala']);
+        }
+        
+        return view('errors.404');
+    }
+    
+    
 }
