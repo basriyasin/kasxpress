@@ -27,9 +27,9 @@ a:hover.btn, a:active.btn, a:focus.btn {
     color: #eee;
 }
 
-.btn:hover, .btn:active, .btn:focus {
+/*.btn:hover, .btn:active, .btn:focus {
     background-color: rgba(52, 59, 64, 0.9);
-}
+}*/
 
 p {
     padding: 0;
@@ -1263,7 +1263,7 @@ select.form-control {
     text-align: center;
     font-weight: 700;
     margin-bottom: 20px;
-    margin-top: 60px;
+    margin-top: 35px;
 }
 
 .blue_divider {
@@ -1539,4 +1539,69 @@ select.form-control {
 
 .icon-red {
     color: red;
+}
+=======
+#infoAccount .transferInfo {
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+    border: 1px solid #e5e5e5;
+}
+
+.deposit-header{
+    padding-left: 0 !important;
+}
+
+#infoAccount .bankInfo .item {
+    width: 33.33%;
+    float: left;
+    padding: 15px;
+    display: table;
+    font-size: 14px;
+    text-align: left;
+    border-left: 5px solid #2dc997;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+}
+
+.panel-group .panel {
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #EEEEEE;
+}
+
+.panel-default > .panel-heading {
+    padding: 0;
+    border-radius: 0;
+    color: #212121;
+    background-color: #FAFAFA;
+    border-color: #EEEEEE;
+}
+
+.panel-title {
+    font-size: 14px;
+}
+
+.panel-title > a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.panel-body {
+    font-size: 12px;
+    text-align: left;
+    color: gray;
+}
+
+.more-less {
+    float: right;
+    color: #212121;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #EEEEEE;
 }
