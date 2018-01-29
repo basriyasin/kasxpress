@@ -26,17 +26,17 @@
                                             <option disabled selected="">-- Pilih Perusahaan --</option>
                                             <option>PT Aldiracita Corpotama</option>
                                             <option>PT Amantara Securities</option>
-                                            <option>PT Anugerah Securindo Indah (ID)</option>
-                                            <option>PT ARTHA SECURITIES INDONESIA (SH)</option>
-                                            <option>PT Asjaya Indosurya Securities (IP)</option>
-                                            <option>PT BAHANA SECURITIES (DX)</option>
-                                            <option>PT BARCLAYS CAPITAL SECURITIES INDONESIA (X2)</option>
-                                            <option>PT BATAVIA PROSPERINDO SEKURITAS (BZ)</option>
+                                            <option>PT Anugerah Securindo Indah</option>
+                                            <option>PT ARTHA SECURITIES INDONESIA</option>
+                                            <option>PT Asjaya Indosurya Securities</option>
+                                            <option>PT BAHANA SECURITIES</option>
+                                            <option>PT BARCLAYS CAPITAL SECURITIES INDONESIA</option>
+                                            <option>PT BATAVIA PROSPERINDO SEKURITAS</option>
                                             <option>PT BCA SEKURITAS</option>
                                             <option>PT BEPEDE JATENG SECURITIES</option>
-                                            <option>PT Binaartha Parama (BJ)</option>
-                                            <option>PT Bloom Nusantara Capital (GA)</option>
-                                            <option>PT BNI Securities (NI)</option>
+                                            <option>PT Binaartha Parama</option>
+                                            <option>PT Bloom Nusantara Capital</option>
+                                            <option>PT BNI Securities</option>
                                             <option value="notfound">Tidak ada dalam daftar.</option>
                                         </select>
                                     </div>
