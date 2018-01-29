@@ -17,7 +17,7 @@ class BorrowerController extends Controller {
     protected function registerPostStep(Request $r, $step) {
         $step = (int)preg_filter('/\D/', '', $step);
         
-        return ($step >= 1 && $val <= 10)
+        return ($step >= 0 && $val <= 10)
                 ? view('borrower.register.step.'.$step)
                 : view('errors.404');
     }
