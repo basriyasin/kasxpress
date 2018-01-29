@@ -44,5 +44,12 @@ Route::group(['middleware' => 'guest'], function(){
         Route::get('/confirm/{email}',     ['as' => 'account.confirmEmail',    'uses' => 'Auth\AuthController@confirmEmail']);
     });
     
+    Route::group(['prefix' => 'borrower'], function() {
+        Route::group(['prefix' => 'register'], function() {
+            Route::get ('/step-{step}', ['as' => 'borrower.register.get.step',  'uses' => 'BorrowerController@registerGetStep']);
+            Route::post('/step-{step}', ['as' => 'borrower.register.post.step', 'uses' => 'BorrowerController@registerPostStep']);
+        });
+    });
+    
 });
 
