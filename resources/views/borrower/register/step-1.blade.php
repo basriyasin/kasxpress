@@ -36,7 +36,15 @@
                                         </select>
                                         <textarea class="form-control" name="tujuanPinjaman" rows="5"></textarea>
                                     </div>
-                                    <hr>
+                                    <div class="col-md-12">
+                                        <label>Darimana Anda Tahu tentang KasXpress?</label>
+                                        <select class="form-control margin-bottom-20" name="ad" required="">
+                                            <option >Iklan Google</option>
+                                            <option >Pencarian Google</option>
+                                            <option >Media Cetak</option>
+                                            <option >Teman</option>
+                                        </select>
+                                    </div>
                                     <div class="col-md-12">
                                         <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
                                     </div>
@@ -52,7 +60,7 @@
                         Simulasi Pembayaran
                     </div>
                     <div class="container">
-                        <div class="col-md-12 row border-bottom">
+                        <div class="col-md-12 row border-bottom margin-bottom-20">
                             <div class="col-md-6">
                                 <div class="item">
                                     <div class="title">
@@ -82,7 +90,7 @@
                                 </div> 
                             </div>
                         </div>
-                        <div class="col-md-12 row border-bottom">
+                        <div class="col-md-12 row border-bottom margin-bottom-20">
                             <div class="col-md-12">
                                 <div class="item">
                                     <div class="title">
@@ -93,7 +101,7 @@
                                 </div> 
                             </div>
                         </div>
-                        <div class="col-md-12 row border-bottom">
+                        <div class="col-md-12 row">
                             <div class="col-md-12">
                                 <div class="item">
                                     <div class="title">
