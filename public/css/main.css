@@ -1681,3 +1681,17 @@ select.form-control {
 #borrowerInfo .tab-content div select.form-control:disabled {
     color: #aaa;    
 }
+
+
+textarea.form-control {
+    height: 100px !important;
+}
+
+.text-small {
+    font-size: 12px !important;
+}
+
+.detailed-box-simulation .item span {
+    font-size: 16px;
+    color: #333;
+}
