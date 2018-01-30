@@ -33,10 +33,10 @@
                         </li>
                         </li>
                     </ul>
-                    <div class="container">
-                        <div class="tab-content">
-                            <div id="personal-data" class="tab-pane fade in active">
-                                <form autocomplete="off" class="col-md-12 row">
+                    <form autocomplete="off" class="col-md-12 row">
+                        <div class="container">
+                            <div class="tab-content">
+                                <div id="personal-data" class="tab-pane fade in active">
                                     <div class="col-md-12 row">
                                         <div class="col-md-3">
                                             <label>Sapaan</label>
@@ -52,12 +52,12 @@
                                     </div>
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
-                                            <label>Tempat Lahir</label>
+                                            <label>Tanggal Lahir</label>
                                             <input class="form-control" type="date" name="tempatLahir" placeholder="Contoh: Jakarta">
                                         </div>
                                         <div class="col-md-6">
-                                            <label>Tanggal Lahir</label>
-                                            <input class="form-control" name="tanggalLahir" placeholder="Tanggal Lahir" required="">
+                                            <label>Tempat Lahir</label>
+                                            <input class="form-control" name="tanggalLahir" placeholder="Tempat Lahir" required="">
                                         </div>
                                     </div>
 
@@ -124,13 +124,11 @@
                                     </div>
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
-                                            <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
+                                            <a class="margin-top-20 btn btn-main" id="next-form" target="personal-contact">Selanjutnya</a>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                            <div id="personal-contact" class="tab-pane fade">
-                                <form>
+                                </div>
+                                <div id="personal-contact" class="tab-pane fade">
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
                                             <label>No. HP</label>
@@ -277,14 +275,12 @@
                                         </div>
                                         <div class="col-md-12 row">
                                             <div class="col-md-12">
-                                                <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
+                                                <a class="margin-top-20 btn btn-main" id="next-form" target="family-contact">Selanjutnya</a>
                                             </div>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                            <div id="family-contact" class="tab-pane fade">
-                                <form>
+                                </div>
+                                <div id="family-contact" class="tab-pane fade">
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
                                             <label>Nama Keluarga Tidak Serumah</label>
@@ -378,12 +374,13 @@
                                             </select>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                            <div id="job-detail" class="tab-pane fade">
-
-
-                                <form autocomplete="off" class="col-md-12 row">
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-12">
+                                            <a class="margin-top-20 btn btn-main" id="next-form" target="job-detail">Selanjutnya</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="job-detail" class="tab-pane fade">
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
                                             <label>Nama Perusahaan</label>
@@ -426,19 +423,9 @@
                                             <input class="form-control" name="pengeluaran"  required="">
                                         </div>
                                     </div>
-
-
-                                    <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
-                                </form>
-
-
-
-                            </div>
-                            <div id="bank-detail" class="tab-pane fade">
-
-
-
-                                <form autocomplete="off" class="col-md-12 row">
+                                    <a class="margin-top-20 btn btn-main" id="next-form" target="bank-detail">Selanjutnya</a>
+                                </div>
+                                <div id="bank-detail" class="tab-pane fade">
                                     <div class="col-md-12 row">
                                         <div class="col-md-5">
                                             <label>Nama Bank</label>
@@ -500,33 +487,29 @@
                                             <input class="form-control" name="atas_nama" required="">
                                         </div>
                                     </div>
+                                    <a class="margin-top-20 btn btn-main" id="next-form" target="documents">Selanjutnya</a>
+                                </div>
+                                <div id="documents" class="tab-pane fade">
 
-                                    <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
-                                </form>
-
-
-                            </div>
-                            <div id="documents" class="tab-pane fade">
-
-                                <form autocomplete="off" class="form-horizontal">
-                                    <div class="form-group">
-                                        <label class="col-md-4 control-label">Arsip KTP</label>
-                                        <div class="col-md-12">
-                                            <button class="btn btn-primary">Upload File</button>
+                                    <form autocomplete="off" class="form-horizontal">
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label">Arsip KTP</label>
+                                            <div class="col-md-12">
+                                                <button class="btn btn-primary">Upload File</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <hr class="margin-vertical-50">
-                                      <div class="form-group">
-                                        <label class="col-md-4 control-label">Arsip NPWP</label>
-                                        <div class="col-md-12">
-                                            <input type="file" name="arsipFile">Upload File</button>
+                                        <hr class="margin-vertical-50">
+                                        <div class="form-group">
+                                            <label class="col-md-4 control-label">Arsip NPWP</label>
+                                            <div class="col-md-12">
+                                                <input type="file" name="arsipFile">Upload File</button>
+                                            </div>
                                         </div>
-                                    </div>
-                                </form>
+                                    </form>
 
+                                </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
             <div class="col-md-4 ">
@@ -568,7 +551,14 @@
             .ready(function () {
 
                 $('.nav-tabs a:first').tab('show');
-
+                    lala = 0;
+                $('a[id^="next-form"]')
+                        .click(function () {
+                            console.log(lala++);
+                            next = $(this).attr('target');
+                            $('a[href="#' + next + '"]').tab('show');
+                            $("html, body").animate({ scrollTop: 0 }, "slow");
+                        });
             });
 </script>
 @endsection

@@ -18,7 +18,8 @@
                     </div>
                     <div class="container">
                         <div class="tab-content">
-                            <form autocomplete="off" class="col-md-12 row">
+                            <form autocomplete="off" class="col-md-12 row" method="post" action="{{ route('borrower.register.post.step-1') }}">
+                                {{ csrf_field() }}
                                 <div class="col-md-12 row">
                                     <div class="col-md-12">
                                         <label>Daftar Perusahaan</label>

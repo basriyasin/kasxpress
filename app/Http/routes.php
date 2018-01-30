@@ -47,8 +47,12 @@ Route::group(['middleware' => 'guest'], function(){
     Route::group(['prefix' => 'borrower'], function() {
         Route::group(['prefix' => 'register'], function() {
             Route::get ('/confirm/{token}');
-            Route::get ('/step-{step}', ['as' => 'borrower.register.get.step',  'uses' => 'BorrowerController@registerGetStep']);
-            Route::post('/step-{step}', ['as' => 'borrower.register.post.step', 'uses' => 'BorrowerController@registerPostStep']);
+            Route::get ('/step-1', ['as' => 'borrower.register.get.step-1',  'uses' => 'BorrowerController@registerGetStep1']);
+            Route::post('/step-1', ['as' => 'borrower.register.post.step-1', 'uses' => 'BorrowerController@registerPostStep1']);
+            Route::get ('/step-2', ['as' => 'borrower.register.get.step-2',  'uses' => 'BorrowerController@registerGetStep2']);
+            Route::post('/step-2', ['as' => 'borrower.register.post.step-2', 'uses' => 'BorrowerController@registerPostStep2']);
+            Route::get ('/step-3', ['as' => 'borrower.register.get.step-3',  'uses' => 'BorrowerController@registerGetStep3']);
+            Route::post('/step-3', ['as' => 'borrower.register.post.step-3', 'uses' => 'BorrowerController@registerPostStep3']);
         });
     });
     
