@@ -123,17 +123,263 @@
                                             </select>
                                         </div>
                                     </div>
-
-
-
-                                    <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-6">
+                                            <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
+                                        </div>
+                                    </div>
                                 </form>
                             </div>
                             <div id="personal-contact" class="tab-pane fade">
-                                personal-contact
+                                <form>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-6">
+                                            <label>No. HP</label>
+                                            <input class="form-control" name="" placeholder="Contoh: 0811223344455" required="">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>Telepon Rumah</label>
+                                            <input class="form-control" name="namaLengkap" placeholder="Contoh: 0411223344" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-12">
+                                            <label>Alamat</label>
+                                            <textarea class="form-control" name="alamat" placeholder="Alamat" required=""></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-4">
+                                            <label>Provinsi</label>
+                                            <select class="form-control" name="provinsi" placeholder="" required="">
+                                                <option disabled selected="">-- Pilih Provinsi --</option>
+                                                <option >DKI Jakarta</option>
+                                                <option >Jawa Barat</option>
+                                                <option >Jawa Tengah</option>
+                                                <option >Jawa Timur</option>
+                                                <option >Kalimantan Barat</option>
+                                                <option >Kalimantan Selatan</option>
+                                                <option >Kalimantan Tengah</option>
+                                                <option >Kalimantan Timur</option>
+                                                <option >Kalimantan Utara</option>
+                                                <option >Sumatra Barat</option>
+                                                <option >Sumatra Selatan</option>
+                                                <option >Sumatra Tengah</option>
+                                                <option >Sumatra Timur</option>
+                                                <option >Sumatra Utara</option>
+                                                <option >Sulawesi Barat</option>
+                                                <option >Sulawesi Selatan</option>
+                                                <option >Sulawesi Tengah</option>
+                                                <option >Sulawesi Tenggara</option>
+                                                <option >Sulawesi Timur</option>
+                                                <option >Sulawesi Utara</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label>Kota</label>
+                                            <select class="form-control" name="kota" placeholder="" required="">
+                                                <option disabled selected="">-- Pilih Kota --</option>
+                                                <option >Jakarta Barat</option>
+                                                <option >Jakarta Pusat</option>
+                                                <option >Jakarta Selatan</option>
+                                                <option >Jakarta Timur</option>
+                                                <option >Jakarta Utara</option>
+                                                <option >Tangerang</option>
+                                                <option >Bekasi</option>
+                                                <option >Bogor</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label>Kecamatan</label>
+                                            <select class="form-control" name="kota" placeholder="" required="">
+                                                <option disabled selected="">-- Pilih Kecamatan --</option>
+                                                <option >Kebayoran Baru</option>
+                                                <option >Kebayoran Lama</option>
+                                                <option >Pesanggrahan</option>
+                                                <option >Cilandak</option>
+                                                <option >Pasar Minggu</option>
+                                                <option >Jagakarsa</option>
+                                                <option >Mampang Prapatan</option>
+                                                <option >Pancoran</option>
+                                                <option >Tebet</option>
+                                                <option >Setiabudi</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-12 ">
+                                            <div class="form-control">
+                                                <input type="checkbox"> Alamat Domisili sama dengan alamat KTP
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-12">
+                                            <label>Alamat</label>
+                                            <textarea class="form-control" name="alamat" placeholder="Alamat" required=""></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-4">
+                                            <label>Provinsi</label>
+                                            <select class="form-control" name="provinsi" placeholder="" required="">
+                                                <option disabled selected="">-- Pilih Provinsi --</option>
+                                                <option >DKI Jakarta</option>
+                                                <option >Jawa Barat</option>
+                                                <option >Jawa Tengah</option>
+                                                <option >Jawa Timur</option>
+                                                <option >Kalimantan Barat</option>
+                                                <option >Kalimantan Selatan</option>
+                                                <option >Kalimantan Tengah</option>
+                                                <option >Kalimantan Timur</option>
+                                                <option >Kalimantan Utara</option>
+                                                <option >Sumatra Barat</option>
+                                                <option >Sumatra Selatan</option>
+                                                <option >Sumatra Tengah</option>
+                                                <option >Sumatra Timur</option>
+                                                <option >Sumatra Utara</option>
+                                                <option >Sulawesi Barat</option>
+                                                <option >Sulawesi Selatan</option>
+                                                <option >Sulawesi Tengah</option>
+                                                <option >Sulawesi Tenggara</option>
+                                                <option >Sulawesi Timur</option>
+                                                <option >Sulawesi Utara</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label>Kota</label>
+                                            <select class="form-control" name="kota" placeholder="" required="">
+                                                <option disabled selected="">-- Pilih Kota --</option>
+                                                <option >Jakarta Barat</option>
+                                                <option >Jakarta Pusat</option>
+                                                <option >Jakarta Selatan</option>
+                                                <option >Jakarta Timur</option>
+                                                <option >Jakarta Utara</option>
+                                                <option >Tangerang</option>
+                                                <option >Bekasi</option>
+                                                <option >Bogor</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label>Kecamatan</label>
+                                            <select class="form-control" name="kota" placeholder="" required="">
+                                                <option disabled selected="">-- Pilih Kecamatan --</option>
+                                                <option >Kebayoran Baru</option>
+                                                <option >Kebayoran Lama</option>
+                                                <option >Pesanggrahan</option>
+                                                <option >Cilandak</option>
+                                                <option >Pasar Minggu</option>
+                                                <option >Jagakarsa</option>
+                                                <option >Mampang Prapatan</option>
+                                                <option >Pancoran</option>
+                                                <option >Tebet</option>
+                                                <option >Setiabudi</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 row">
+                                            <div class="col-md-12">
+                                                <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                             <div id="family-contact" class="tab-pane fade">
-                                family-contact
+                                <form>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-6">
+                                            <label>Nama Keluarga Tidak Serumah</label>
+                                            <input class="form-control" name="" placeholder="Nama Kerabat" required="">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>Hubungan Keluarga</label>
+                                            <select class="form-control" name="hubunganKeluarga" placeholder="" required="">
+                                                <option disabled selected="">-- Pilih Hubungan Keluarga --</option>
+                                                <option >Saudara Kandung</option>
+                                                <option >Saudara Tiri</option>
+                                                <option >Ipar</option>
+                                                <option >Paman</option>
+                                                <option >Bibi</option>
+                                                <option >Kakek</option>
+                                                <option >Nenek</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-6">
+                                            <label>No. HP</label>
+                                            <input class="form-control" name="" placeholder="Contoh: 0811223344455" required="">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>Telepon Rumah</label>
+                                            <input class="form-control" name="namaLengkap" placeholder="Contoh: 0411223344" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-12">
+                                            <label>Alamat</label>
+                                            <textarea class="form-control" name="alamat" placeholder="Alamat" required=""></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-4">
+                                            <label>Provinsi</label>
+                                            <select class="form-control" name="provinsi" placeholder="" required="">
+                                                <option disabled selected="">-- Pilih Provinsi --</option>
+                                                <option >DKI Jakarta</option>
+                                                <option >Jawa Barat</option>
+                                                <option >Jawa Tengah</option>
+                                                <option >Jawa Timur</option>
+                                                <option >Kalimantan Barat</option>
+                                                <option >Kalimantan Selatan</option>
+                                                <option >Kalimantan Tengah</option>
+                                                <option >Kalimantan Timur</option>
+                                                <option >Kalimantan Utara</option>
+                                                <option >Sumatra Barat</option>
+                                                <option >Sumatra Selatan</option>
+                                                <option >Sumatra Tengah</option>
+                                                <option >Sumatra Timur</option>
+                                                <option >Sumatra Utara</option>
+                                                <option >Sulawesi Barat</option>
+                                                <option >Sulawesi Selatan</option>
+                                                <option >Sulawesi Tengah</option>
+                                                <option >Sulawesi Tenggara</option>
+                                                <option >Sulawesi Timur</option>
+                                                <option >Sulawesi Utara</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label>Kota</label>
+                                            <select class="form-control" name="kota" placeholder="" required="">
+                                                <option disabled selected="">-- Pilih Kota --</option>
+                                                <option >Jakarta Barat</option>
+                                                <option >Jakarta Pusat</option>
+                                                <option >Jakarta Selatan</option>
+                                                <option >Jakarta Timur</option>
+                                                <option >Jakarta Utara</option>
+                                                <option >Tangerang</option>
+                                                <option >Bekasi</option>
+                                                <option >Bogor</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label>Kecamatan</label>
+                                            <select class="form-control" name="kota" placeholder="" required="">
+                                                <option disabled selected="">-- Pilih Kecamatan --</option>
+                                                <option >Kebayoran Baru</option>
+                                                <option >Kebayoran Lama</option>
+                                                <option >Pesanggrahan</option>
+                                                <option >Cilandak</option>
+                                                <option >Pasar Minggu</option>
+                                                <option >Jagakarsa</option>
+                                                <option >Mampang Prapatan</option>
+                                                <option >Pancoran</option>
+                                                <option >Tebet</option>
+                                                <option >Setiabudi</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                             <div id="job-detail" class="tab-pane fade">
 
