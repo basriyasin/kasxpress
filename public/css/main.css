@@ -1071,7 +1071,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
-.form-control:focus {
+/*.form-control:focus {
     border: none !important;
     border-radius: 0px !important;
     border-bottom: 1px #eee solid !important;
@@ -1080,7 +1080,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     color: #FFF;
     outline: none;
     box-shadow: none;
-}
+}*/
 
 select.form-control {
     height: calc(2.25rem + 5px) !important;    
@@ -1614,53 +1614,66 @@ select.form-control {
     background: #eee;
 }
 
-.tab-content div {
+#borrowerInfo .tab-content div {
     padding: 20px;
     color: black !important;
 }
 
-.tab-content div .form-control {
-    border: none;
-    border-radius: 0px;
-    border-bottom: 1px #333 solid;
+#borrowerInfo .tab-content div .form-control {
+    border: 1px solid #979797;
     padding: 10px 0px;
-    background: none;
     color: #000;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 14px;
+    padding: 0.5rem;
 }
 
 
-.tab-content div .form-control::placeholder {
+#borrowerInfo .tab-content div .form-control::placeholder {
     padding: 10px 0px;
     color: #aaa ;
 }
 
 
-.tab-content div .form-control:invalid{
+#borrowerInfo .tab-content div .form-control:invalid{
     box-shadow: none;
 }
 
 
-.tab-content div .form-control:focus {
-    border: none !important;
-    border-radius: 0px !important;
-    border-bottom: 1px #eee solid !important;
-    padding: 10px 0px !important;
-    background: transparent !important;
-    color: #000;
-    outline: none;
+#borrowerInfo .tab-content div .form-control:focus {
+    border-radius: 5px !important;
+    border: 1px solid #164376 !important;
+    font-size: 14px;
+    color: #154276;
+    outline: 0 !important;
+    width: 100%;
     box-shadow: none;
 }
 
 
-.tab-content div select.form-control {
-    height: calc(2.5rem + 5px) !important;    
+#borrowerInfo .tab-content div select.form-control{
+    height: 2.4375rem !important;    
     -webkit-appearance: none;  /*Removes default chrome and safari style*/
     -moz-appearance: none;  /*Removes default style Firefox*/
     background: url(/img/icon/down-black.png) no-repeat right;
     background-size: 10px;
     cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #164376;
+    background-color: #E9EDF2;
+    font-size: 14px;
+    color: #154276;
+    outline: 0 !important;
+    width: 100%;
+    background-size: 9px 6px;
+    background-position: right -1rem center;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    padding-right: 1.5rem;
+    padding-left: 1rem;
 }
 
-.tab-content div select.form-control:disabled {
+#borrowerInfo .tab-content div select.form-control:disabled {
     color: #aaa;    
 }

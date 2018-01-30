@@ -8,7 +8,7 @@
 <section id="hero" class="hero-bg-1">
     <div class="row height-100">
 
-        <div class="col-md-10 row col-center margin-top-20">
+        <div class="col-md-10 row col-center margin-top-20"  id="borrowerInfo">
             <h3>Pengajuan Pinjaman Karyawan PT. SUSANTO Lalala.</h3>
             <hr class="margin-vertical-50">
             <div class="col-md-8">
@@ -136,13 +136,149 @@
                                 family-contact
                             </div>
                             <div id="job-detail" class="tab-pane fade">
-                                job-detail
+
+
+                                <form autocomplete="off" class="col-md-12 row">
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-6">
+                                            <label>Nama Perusahaan</label>
+                                            <input class="form-control" name="namaPerusahaan" placeholder="Nama Perusahaan" required="">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>Jabatan</label>
+                                            <input class="form-control" name="jabatan" placeholder="Contoh: Manager" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-6">
+                                            <label>Status Pekerjaan</label>
+                                            <select class="form-control" name="status_pekerjaan" required="">
+                                                <option value="permanen" selected>Permanen</option>
+                                                <option value="kontrak">Kontrak</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>NIK</label>
+                                            <input class="form-control" name="nik" placeholder="Nomor Induk Karyawan" required="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-6">
+                                            <label>Lama Bekerja di Perusahaan ini</label>
+                                            <input class="form-control" name="lama_bekerja" placeholder="Bulan" required="">
+                                        </div>
+
+                                    </div>
+                                    <hr class="margin-vertical-50">
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-6">
+                                            <label>Gaji Per Bulan</label>
+                                            <input class="form-control" name="gaji"  required="" pattern="[0-9]*">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>Pengeluaran Per Bulan</label>
+                                            <input class="form-control" name="pengeluaran"  required="">
+                                        </div>
+                                    </div>
+
+
+                                    <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
+                                </form>
+
+
+
                             </div>
                             <div id="bank-detail" class="tab-pane fade">
-                                bank-detail
+
+
+
+                                <form autocomplete="off" class="col-md-12 row">
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-5">
+                                            <label>Nama Bank</label>
+                                            <select class="form-control" name="nama_bank" required="">
+                                                <option selected>--Pilih Bank--</option>
+                                                <option value="ARTAJASA PEMBAYARAN ELEK. (RTGS)">ARTAJASA PEMBAYARAN ELEK. (RTGS)</option>
+                                                <option value="BANGKOK BANK PUBLIC CO.LTD">BANGKOK BANK PUBLIC CO.LTD</option>
+                                                <option value="BANK INDEX SELINDO">BANK INDEX SELINDO</option>
+                                                <option value="BANK INDONESIA">BANK INDONESIA</option>
+                                                <option value="BANK INDONESIA KP JAKARTA">BANK INDONESIA KP JAKARTA</option>
+                                                <option value="BANK OF AMERICA NA">BANK OF AMERICA NA</option>
+                                                <option value="BANK OF CHINA (HONG KONG) LIMITED">BANK OF CHINA (HONG KONG) LIMITED</option>
+                                                <option value="BI CABANG AMBON,AMB">BI CABANG AMBON,AMB</option>
+                                                <option value="BI CABANG BALIKPAPAN,BLP">BI CABANG BALIKPAPAN,BLP</option>
+                                                <option value="BI CABANG BANDA ACEH,BDA">BI CABANG BANDA ACEH,BDA</option>
+                                                <option value="BI CABANG BANDAR LAMPUNG,BDL">BI CABANG BANDAR LAMPUNG,BDL</option>
+                                                <option value="BI CABANG BANDUNG,BDG">BI CABANG BANDUNG,BDG</option>
+                                                <option value="BI CABANG BANJARMASIN">BI CABANG BANJARMASIN</option>
+                                                <option value="BI CABANG BATAM,BTM">BI CABANG BATAM,BTM</option>
+                                                <option value="BI CABANG BENGKULU">BI CABANG BENGKULU</option>
+                                                <option value="BI CABANG CIREBON,CRB">BI CABANG CIREBON,CRB</option>
+                                                <option value="BI CABANG DENPASAR,BALI">BI CABANG DENPASAR,BALI</option>
+                                                <option value="BI CABANG JAMBI">BI CABANG JAMBI</option>
+                                                <option value="BI CABANG JAYAPURA">BI CABANG JAYAPURA</option>
+                                                <option value="BI CABANG JEMBER,JBR">BI CABANG JEMBER,JBR</option>
+                                                <option value="BI CABANG KEDIRI,KDR">BI CABANG KEDIRI,KDR</option>
+                                                <option value="BI CABANG KENDARI,KDI">BI CABANG KENDARI,KDI</option>
+                                                <option value="BI CABANG KUPANG,KPG">BI CABANG KUPANG,KPG</option>
+                                                <option value="BI CABANG LHOKSEUMAWE,LSM">BI CABANG LHOKSEUMAWE,LSM</option>
+                                                <option value="BI CABANG MALANG,MLG">BI CABANG MALANG,MLG</option>
+                                                <option value="BI CABANG MANADO,MDO">BI CABANG MANADO,MDO</option>
+                                                <option value="BI CABANG MATARAM,CKA">BI CABANG MATARAM,CKA</option>
+                                                <option value="BI CABANG MEDAN,MDN">BI CABANG MEDAN,MDN</option>
+                                                <option value="BI CABANG PADANG,PDG">BI CABANG PADANG,PDG</option>
+                                                <option value="BI CABANG PALANGKARAYA">BI CABANG PALANGKARAYA</option>
+                                                <option value="BI CABANG PALEMBANG,PLG">BI CABANG PALEMBANG,PLG</option>
+                                                <option value="BI CABANG PALU,PLS">BI CABANG PALU,PLS</option>
+                                                <option value="BI CABANG PEKAN BARU,PKB">BI CABANG PEKAN BARU,PKB</option>
+                                                <option value="BI CABANG PONTIANAK,PTK">BI CABANG PONTIANAK,PTK</option>
+                                                <option value="BI CABANG SAMARINDA,SMD">BI CABANG SAMARINDA,SMD</option>
+                                                <option value="BI CABANG SEMARANG,SMG">BI CABANG SEMARANG,SMG</option>
+                                                <option value="BI CABANG SIBOLGA">BI CABANG SIBOLGA</option>
+                                                <option value="BI CABANG SOLO,SLO">BI CABANG SOLO,SLO</option>
+                                                <option value="BI CABANG SURABAYA,SBY">BI CABANG SURABAYA,SBY</option>
+                                                <option value="BI CABANG TEGAL">BI CABANG TEGAL</option>
+                                                <option value="BI CABANG TERNATE">BI CABANG TERNATE</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <label>No Rekening</label>
+                                            <input class="form-control" name="no-rekening" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-5">
+                                        </div>
+                                        <div class="col-md-7">
+                                            <label>Atas Nama</label>
+                                            <input class="form-control" name="atas_nama" required="">
+                                        </div>
+                                    </div>
+
+                                    <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
+                                </form>
+
+
                             </div>
                             <div id="documents" class="tab-pane fade">
-                                documents
+
+                                <form autocomplete="off" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label">Arsip KTP</label>
+                                        <div class="col-md-12">
+                                            <button class="btn btn-primary">Upload File</button>
+                                        </div>
+                                    </div>
+                                    <hr class="margin-vertical-50">
+                                      <div class="form-group">
+                                        <label class="col-md-4 control-label">Arsip NPWP</label>
+                                        <div class="col-md-12">
+                                            <input type="file" name="arsipFile">Upload File</button>
+                                        </div>
+                                    </div>
+                                </form>
+
                             </div>
                         </div>
                     </div>
