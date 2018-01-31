@@ -33,55 +33,66 @@
                         </li>
                         </li>
                     </ul>
-                        <div class="container">
-                            <div class="tab-content">
-                                <div id="personal-data" class="tab-pane fade in active">
-                                <form autocomplete="off" class="col-md-12 row">
+                    <div class="container">
+                        <div class="tab-content">
+                            <div id="personal-data" class="tab-pane fade in active">
+                                <form autocomplete="off" class="col-md-12 row" id="data-form" next-form="personal-contact">
                                     <div class="col-md-12 row">
                                         <div class="col-md-3">
                                             <label>Sapaan</label>
-                                            <select class="form-control" name="jenisKelamin" required="">
+                                            <select class="form-control" name="personal-data.sapaan" required>
                                                 <option value="NULL">Mr.</option>
                                                 <option value="PT">Ms.</option>
                                             </select>
                                         </div>
                                         <div class="col-md-9">
                                             <label>Nama Lengkap</label>
-                                            <input class="form-control" name="namaLengkap" placeholder="Contoh: Danny" required="">
+                                            <input class="form-control" name="personal-data.namaLengkap" placeholder="Contoh: Danny" required>
                                         </div>
                                     </div>
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
                                             <label>Tanggal Lahir</label>
-                                            <input class="form-control" type="date" name="tempatLahir" placeholder="Contoh: Jakarta">
+                                            <input class="form-control" type="date" name="personal-data.tanggalLahir" 
+                                                   pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" 
+                                                   max="{{ date('Y-m-d', strtotime('-17 years')) }}" 
+                                                   value="{{ date('Y-m-d', strtotime('-17 years')) }}" 
+                                                   required>
                                         </div>
                                         <div class="col-md-6">
                                             <label>Tempat Lahir</label>
-                                            <input class="form-control" name="tanggalLahir" placeholder="Tempat Lahir" required="">
+                                            <input class="form-control" name="personal-data.tempatLahir" placeholder="Contoh: Jakarta" required>
                                         </div>
                                     </div>
 
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
                                             <label>Nomor KTP</label>
-                                            <input class="form-control" name="noKtp" placeholder="Contoh: 72000xx" required="">
+                                            <input class="form-control" name="personal-data.ktp" placeholder="Contoh: 7200000000000000" maxlength="16" pattern="[0-9]{16}" required>                                                   
                                         </div>
                                         <div class="col-md-6">
                                             <label>Masa Berlaku Hingga</label>
-                                            <input class="form-control" type="date" name="ktpExpireDate" placeholder="Berlaku Hingga">
+                                            <input class="form-control" type="date" name="personal-data.ktpExpireDate"
+                                                   min="{{ date('Y-m-d', strtotime('+3 month')) }}" 
+                                                   value="{{ date('Y-m-d', strtotime('+3 month')) }}" 
+                                                   required>
                                         </div>
                                     </div>
                                     <div class="col-md-12 row">
                                         <div class="col-md-10">
                                             <label>Nomor NPWP</label>
-                                            <input class="form-control" name="npwp" placeholder="Format: 99.999.999.9-999.999" required="">
+                                            <input class="form-control" name="personal-data.npwp" placeholder="Contoh: 9999999999999" 
+                                                   id="personal-data-npwp"
+                                                   pattern="[0-9]{13}"
+                                                   maxlength="13"
+                                                   required>
                                         </div>
                                     </div>
                                     <div class="col-md-12 row">
 
                                         <div class="col-md-6">
                                             <label>Pendidikan Terakhir</label>
-                                            <select class="form-control" name="pendidikan"required="">
+                                            <select class="form-control" name="personal-data.pendidikan"required>
                                                 <option disabled selected="">-- Pendidikan Terakhir --</option>
                                                 <option value="smk">SMK</option>
                                                 <option value="s1">Sarjana</option>
@@ -92,7 +103,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <label>Status Pernikahan</label>
-                                            <select class="form-control" name="status" required="">
+                                            <select class="form-control" name="personal-data.status" required>
                                                 <option disabled selected="">-- Status Pernikahan --</option>
                                                 <option value="lajang">Lajang</option>
                                                 <option value="menikah">Menikah</option>
@@ -103,7 +114,7 @@
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
                                             <label>Jumlah Tanggungan</label>
-                                            <select class="form-control" name="tanggungan" placeholder="" required="">
+                                            <select class="form-control" name="personal-data.tanggungan" placeholder="" required>
                                                 <option disabled selected="">-- Jumlah Tanggungan --</option>
                                                 <option value="0">0</option>
                                                 <option value="1">1</option>
@@ -128,29 +139,29 @@
                                         </div>
                                     </div>
                                 </form>
-                                </div>
-                                <div id="personal-contact" class="tab-pane fade">
-                                <form autocomplete="off" class="col-md-12 row">
+                            </div>
+                            <div id="personal-contact" class="tab-pane fade">
+                                <form autocomplete="off" class="col-md-12 row" id="data-form" next-form="family-contact"> 
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
                                             <label>No. HP</label>
-                                            <input class="form-control" name="" placeholder="Contoh: 0811223344455" required="">
+                                            <input class="form-control" name="personal-contact.noHP" placeholder="Contoh: 0811223344455" minlength="11" maxlength="13" pattern="[0-9]{11,13}" required>
                                         </div>
                                         <div class="col-md-6">
                                             <label>Telepon Rumah</label>
-                                            <input class="form-control" name="namaLengkap" placeholder="Contoh: 0411223344" required="">
+                                            <input class="form-control" name="personal-contact.namaLengkap" placeholder="Contoh: 0411223344" maxlength="10" pattern="[0-9]{10}" required>
                                         </div>
                                     </div>
                                     <div class="col-md-12 row">
                                         <div class="col-md-12">
                                             <label>Alamat</label>
-                                            <textarea class="form-control" name="alamat" placeholder="Alamat" required=""></textarea>
+                                            <textarea class="form-control" name="personal-contact.alamatDomisili" placeholder="Alamat domisili" required></textarea>
                                         </div>
                                     </div>
                                     <div class="col-md-12 row">
                                         <div class="col-md-4">
                                             <label>Provinsi</label>
-                                            <select class="form-control" name="provinsi" placeholder="" required="">
+                                            <select class="form-control" name="personal-contact.provinsiDomisili" placeholder="" required>
                                                 <option disabled selected="">-- Pilih Provinsi --</option>
                                                 <option >DKI Jakarta</option>
                                                 <option >Jawa Barat</option>
@@ -176,7 +187,7 @@
                                         </div>
                                         <div class="col-md-4">
                                             <label>Kota</label>
-                                            <select class="form-control" name="kota" placeholder="" required="">
+                                            <select class="form-control" name="personal-contact.kotaDomisili" placeholder="" required>
                                                 <option disabled selected="">-- Pilih Kota --</option>
                                                 <option >Jakarta Barat</option>
                                                 <option >Jakarta Pusat</option>
@@ -190,7 +201,7 @@
                                         </div>
                                         <div class="col-md-4">
                                             <label>Kecamatan</label>
-                                            <select class="form-control" name="kota" placeholder="" required="">
+                                            <select class="form-control" name="personal-contact.kecamatanDomisili" placeholder="" required>
                                                 <option disabled selected="">-- Pilih Kecamatan --</option>
                                                 <option >Kebayoran Baru</option>
                                                 <option >Kebayoran Lama</option>
@@ -208,20 +219,20 @@
                                     <div class="col-md-12 row">
                                         <div class="col-md-12 ">
                                             <div class="form-control col-md-12">
-                                                <input type="checkbox"> Alamat Domisili sama dengan alamat KTP
+                                                <input id="sameAsDomisili" type="checkbox"> Alamat Domisili sama dengan alamat KTP
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-12 row">
                                         <div class="col-md-12">
                                             <label>Alamat</label>
-                                            <textarea class="form-control" name="alamat" placeholder="Alamat" required=""></textarea>
+                                            <textarea class="form-control" name="personal-contact.alamatKTP" placeholder="Alamat sesuai Kartu Tanda Penduduk" required></textarea>
                                         </div>
                                     </div>
                                     <div class="col-md-12 row">
                                         <div class="col-md-4">
                                             <label>Provinsi</label>
-                                            <select class="form-control" name="provinsi" placeholder="" required="">
+                                            <select class="form-control" name="personal-contact.provinsiKTP" placeholder="" required>
                                                 <option disabled selected="">-- Pilih Provinsi --</option>
                                                 <option >DKI Jakarta</option>
                                                 <option >Jawa Barat</option>
@@ -247,7 +258,7 @@
                                         </div>
                                         <div class="col-md-4">
                                             <label>Kota</label>
-                                            <select class="form-control" name="kota" placeholder="" required="">
+                                            <select class="form-control" name="personal-contact.kotaKTP" placeholder="" required>
                                                 <option disabled selected="">-- Pilih Kota --</option>
                                                 <option >Jakarta Barat</option>
                                                 <option >Jakarta Pusat</option>
@@ -261,7 +272,7 @@
                                         </div>
                                         <div class="col-md-4">
                                             <label>Kecamatan</label>
-                                            <select class="form-control" name="kota" placeholder="" required="">
+                                            <select class="form-control" name="personal-contact.kecamatanKTP" placeholder="" required>
                                                 <option disabled selected="">-- Pilih Kecamatan --</option>
                                                 <option >Kebayoran Baru</option>
                                                 <option >Kebayoran Lama</option>
@@ -282,17 +293,17 @@
                                         </div>
                                     </div>
                                 </form>
-                                </div>
-                                <div id="family-contact" class="tab-pane fade">
-                                <form autocomplete="off" class="col-md-12 row">
+                            </div>
+                            <div id="family-contact" class="tab-pane fade">
+                                <form autocomplete="off" class="col-md-12 row" id="data-form" next-form="job-detail">
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
                                             <label>Nama Keluarga Tidak Serumah</label>
-                                            <input class="form-control" name="" placeholder="Nama Kerabat" required="">
+                                            <input class="form-control" name="" placeholder="Nama Kerabat" required>
                                         </div>
                                         <div class="col-md-6">
                                             <label>Hubungan Keluarga</label>
-                                            <select class="form-control" name="hubunganKeluarga" placeholder="" required="">
+                                            <select class="form-control" name="family-contact.hubunganKeluarga" placeholder="" required>
                                                 <option disabled selected="">-- Pilih Hubungan Keluarga --</option>
                                                 <option >Saudara Kandung</option>
                                                 <option >Saudara Tiri</option>
@@ -307,23 +318,23 @@
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
                                             <label>No. HP</label>
-                                            <input class="form-control" name="" placeholder="Contoh: 0811223344455" required="">
+                                            <input class="form-control" name=""family-contact.noHP placeholder="Contoh: 0811223344455"  minlength="11" maxlength="13" pattern="[0-9]{11,13}" required>
                                         </div>
                                         <div class="col-md-6">
                                             <label>Telepon Rumah</label>
-                                            <input class="form-control" name="namaLengkap" placeholder="Contoh: 0411223344" required="">
+                                            <input class="form-control" name="family-contact.namaLengkap" placeholder="Contoh: 0411223344" maxlength="10" pattern="[0-9]{10}"required>
                                         </div>
                                     </div>
                                     <div class="col-md-12 row">
                                         <div class="col-md-12">
                                             <label>Alamat</label>
-                                            <textarea class="form-control" name="alamat" placeholder="Alamat" required=""></textarea>
+                                            <textarea class="form-control" name="family-contact.alamat" placeholder="Alamat" required></textarea>
                                         </div>
                                     </div>
                                     <div class="col-md-12 row">
                                         <div class="col-md-4">
                                             <label>Provinsi</label>
-                                            <select class="form-control" name="provinsi" placeholder="" required="">
+                                            <select class="form-control" name="family-contact.provinsi" required>
                                                 <option disabled selected="">-- Pilih Provinsi --</option>
                                                 <option >DKI Jakarta</option>
                                                 <option >Jawa Barat</option>
@@ -349,7 +360,7 @@
                                         </div>
                                         <div class="col-md-4">
                                             <label>Kota</label>
-                                            <select class="form-control" name="kota" placeholder="" required="">
+                                            <select class="form-control" name="family-contact.kota" required>
                                                 <option disabled selected="">-- Pilih Kota --</option>
                                                 <option >Jakarta Barat</option>
                                                 <option >Jakarta Pusat</option>
@@ -363,7 +374,7 @@
                                         </div>
                                         <div class="col-md-4">
                                             <label>Kecamatan</label>
-                                            <select class="form-control" name="kota" placeholder="" required="">
+                                            <select class="form-control" name="family-contact.kota" placeholder="" required>
                                                 <option disabled selected="">-- Pilih Kecamatan --</option>
                                                 <option >Kebayoran Baru</option>
                                                 <option >Kebayoran Lama</option>
@@ -385,36 +396,36 @@
                                     </div>
                                 </form>
                             </div>
-                                <div id="job-detail" class="tab-pane fade">
-                                <form autocomplete="off" class="col-md-12 row">
+                            <div id="job-detail" class="tab-pane fade" id="data-form" >
+                                <form autocomplete="off" class="col-md-12 row" next-form="bank-detail">
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
                                             <label>Nama Perusahaan</label>
-                                            <input class="form-control" name="namaPerusahaan" placeholder="Nama Perusahaan" required="">
+                                            <input class="form-control" name="job-detail.namaPerusahaan" placeholder="Nama Perusahaan" required>
                                         </div>
                                         <div class="col-md-6">
                                             <label>Jabatan</label>
-                                            <input class="form-control" name="jabatan" placeholder="Contoh: Manager" required="">
+                                            <input class="form-control" name="job-detail.jabatan" placeholder="Contoh: Manager" required>
                                         </div>
                                     </div>
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
                                             <label>Status Pekerjaan</label>
-                                            <select class="form-control" name="status_pekerjaan" required="">
+                                            <select class="form-control" name="job-detail.statusPekerjaan" required>
                                                 <option value="permanen" selected>Permanen</option>
                                                 <option value="kontrak">Kontrak</option>
                                             </select>
                                         </div>
                                         <div class="col-md-6">
                                             <label>NIK</label>
-                                            <input class="form-control" name="nik" placeholder="Nomor Induk Karyawan" required="">
+                                            <input class="form-control" name="job-detail.nik" placeholder="Nomor Induk Karyawan" required>
                                         </div>
                                     </div>
 
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
                                             <label>Lama Bekerja di Perusahaan ini</label>
-                                            <input class="form-control" name="lama_bekerja" placeholder="Bulan" required="">
+                                            <input class="form-control" name="job-detail.lamaBekerja" placeholder="Bulan" required>
                                         </div>
 
                                     </div>
@@ -422,11 +433,11 @@
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
                                             <label>Gaji Per Bulan</label>
-                                            <input class="form-control" name="gaji"  placeholder="Gaji (IDR)"required="" pattern="[0-9]*">
+                                            <input class="form-control" name="job-detail.gaji" placeholder="Gaji (IDR)"required pattern="[0-9]*">
                                         </div>
                                         <div class="col-md-6">
                                             <label>Pengeluaran Per Bulan</label>
-                                            <input class="form-control" name="pengeluaran"  placeholder="Pengeluaran (IDR)" required="">
+                                            <input class="form-control" name="job-detail.pengeluaran"  placeholder="Pengeluaran (IDR)" required>
                                         </div>
                                     </div>
                                     <div class="col-md-12 row">
@@ -438,12 +449,12 @@
 
                             </div>
                             <div id="bank-detail" class="tab-pane fade">
-                                <form autocomplete="off" class="col-md-12 row">
+                                <form autocomplete="off" class="col-md-12 row" id="data-form" next-form="documents">
                                     <div class="col-md-12 row">
                                         <div class="col-md-5">
                                             <label>Nama Bank</label>
-                                            <select class="form-control" name="nama_bank" required="">
-                                                <option selected>--Pilih Bank--</option>
+                                            <select class="form-control" name="bank-detail.namaBank" required>
+                                                <option selected disabled="">--Pilih Bank--</option>
                                                 <option value="ARTAJASA PEMBAYARAN ELEK. (RTGS)">ARTAJASA PEMBAYARAN ELEK. (RTGS)</option>
                                                 <option value="BANGKOK BANK PUBLIC CO.LTD">BANGKOK BANK PUBLIC CO.LTD</option>
                                                 <option value="BANK INDEX SELINDO">BANK INDEX SELINDO</option>
@@ -489,14 +500,14 @@
                                         </div>
                                         <div class="col-md-7">
                                             <label>No Rekening</label>
-                                            <input class="form-control" name="no-rekening" placeholder="No Rekening" required="">
+                                            <input class="form-control" name="bank-detail.no-rekening" placeholder="No Rekening" minlength="6" maxlength="20" pattern="[0-9]{6,20}" required>
                                         </div>
                                     </div>
                                     <div class="col-md-12 row">
                                         <div class="col-md-5"></div>
                                         <div class="col-md-7">
                                             <label>Atas Nama</label>
-                                            <input class="form-control" name="atas_nama" placeholder="Nama Pemilik Rekening" required="">
+                                            <input class="form-control" name="bank-detail.atas_nama" placeholder="Nama Pemilik Rekening" required>
                                         </div>
                                     </div>
                                     <div class="col-md-12 row">
@@ -515,8 +526,8 @@
                                                 <span class="image-preview">
                                                 </span>
                                                 <label for="foto-ktp" class="button upload-label button--grey button--upload button--grey--bordered">Upload File</label>
-                                                <input type="file" data-id="3482" id="foto-ktp" class="show-for-sr upload" upload-status="Consumer" data-type="consumer-ktp" required>
-                                                <input type="hidden" name="cpd_ktp_file" class="filename" value="">
+                                                <input type="file" id="foto-ktp" class="show-for-sr upload" data-type="consumer-ktp" required>
+                                                <input type="hidden" name="documents.cpd_ktp_file" class="filename" value="">
                                             </div>
                                             <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
                                         </div>
@@ -540,7 +551,7 @@
                                                 </span>
                                                 <label for="cover-tabungan" class="button upload-label button--grey button--upload button--grey--bordered">Upload File</label>
                                                 <input type="file" data-id="3482" id="cover-tabungan" class="show-for-sr upload" upload-status="Consumer" data-type="consumer-tabungan" required>
-                                                <input type="hidden" name="cpd_cover_tabungan" class="filename" value="">
+                                                <input type="hidden" name="documents.cpd_cover_tabungan" class="filename" value="">
                                             </div>
                                             <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
                                         </div>
@@ -553,7 +564,7 @@
                                                 </span>
                                                 <label for="latest-salary" class="button upload-label button--grey button--upload button--grey--bordered">Upload File</label>
                                                 <input type="file" data-id="" id="latest-salary" class="show-for-sr upload" upload-status="Consumer" data-type="latest-salary" required>
-                                                <input type="hidden" name="cld_latest_salary_slip_file" class="filename" value="">
+                                                <input type="hidden" name="documents.cld_latest_salary_slip_file" class="filename" value="">
                                             </div>
                                             <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
                                         </div>
@@ -565,7 +576,7 @@
                                                 </span>
                                                 <label for="consumer-bukti-gaji" class="button upload-label button--grey button--upload button--grey--bordered">Upload File</label>
                                                 <input type="file" data-id="" id="consumer-bukti-gaji" class="show-for-sr upload" upload-status="Consumer" data-type="consumer-bukti-gaji" required>
-                                                <input type="hidden" name="cld_bukti_pembayaran_gaji" class="filename" value="">
+                                                <input type="hidden" name="documents.cld_bukti_pembayaran_gaji" class="filename" value="">
                                             </div>
                                             <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
                                         </div>
@@ -577,7 +588,7 @@
                                                 </span>
                                                 <label for="contract-letter-file" class="button upload-label button--grey button--upload button--grey--bordered">Upload File</label>
                                                 <input type="file" data-id="" id="contract-letter-file" class="show-for-sr upload" upload-status="Consumer" data-type="contract-letter" required>
-                                                <input type="hidden" name="cld_contract_letter_file" class="filename" value="">
+                                                <input type="hidden" name="documents.cld_contract_letter_file" class="filename" value="">
                                             </div>
                                             <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
                                         </div>
@@ -589,7 +600,7 @@
                                                 </span>
                                                 <label for="consumer-sk-penetapan" class="button upload-label button--grey button--upload button--grey--bordered">Upload File</label>
                                                 <input type="file" data-id="" id="consumer-sk-penetapan" class="show-for-sr upload" upload-status="Consumer" data-type="consumer-sk-penetapan">
-                                                <input type="hidden" name="cld_surat_keterangan_penetapan" class="filename" value="">
+                                                <input type="hidden" name="documents.cld_surat_keterangan_penetapan" class="filename" value="">
                                             </div>
                                             <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
                                         </div>
@@ -601,7 +612,7 @@
                                                 </span>
                                                 <label for="consumer-loan-photo" class="button upload-label button--grey button--upload button--grey--bordered">Upload File</label>
                                                 <input type="file" data-id="" id="consumer-loan-photo" class="show-for-sr upload" upload-status="Consumer" data-type="consumer-loan-photo" required>
-                                                <input type="hidden" name="cld_loan_photo" class="filename" value="">
+                                                <input type="hidden" name="documents.cld_loan_photo" class="filename" value="">
                                             </div>
                                             <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
                                         </div>
@@ -614,7 +625,7 @@
                                                 </span>
                                                 <label for="consumer-id-card" class="button upload-label button--grey button--upload button--grey--bordered">Upload File</label>
                                                 <input type="file" data-id="" id="consumer-id-card" class="show-for-sr upload" upload-status="Consumer" data-type="consumer-id-card" required>
-                                                <input type="hidden" name="cld_id_card" class="filename" value="">
+                                                <input type="hidden" name="documents.cld_id_card" class="filename" value="">
                                             </div>
                                             <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
                                         </div>
@@ -625,13 +636,13 @@
                                             </div>
                                             <div class="col-md-12 column">
                                                 <label>
-                                                    <input type="checkbox" name="agree1" required>
+                                                    <input type="checkbox" name="documents.agree1" required>
                                                     Saya menyatakan bahwa data-data yang telah saya isi di atas adalah valid dan saya telah melakukan pengecekan kebenaran data-data tersebut.
                                                 </label>
                                             </div>
                                             <div class="col-md-12 column">
                                                 <label>
-                                                    <input type="checkbox" name="agree2" required>
+                                                    <input type="checkbox" name="documents.agree2" required>
                                                     Dengan mengisi formulir ini, saya menyatakan bahwa pihak Investree berhak melakukan pengecekan keabsahan data yang telah saya berikan.
                                                 </label>
                                             </div>
@@ -640,7 +651,7 @@
                                                     Saya menyatakan bahwa telah membaca, mengerti dan menyetujui <a href="https://www.investree.id/pdf/deklarasi_dan_autorisasi" class="fancypdf orange"><span class="imageshow fancypdf thumbnail">Deklarasi dan Autorisasi</span></a> serta <a href="https://www.investree.id/pdf/syarat_dan_ketentuan_zurich" class="fancypdf f-12 orange"><span class="imageshow fancypdf thumbnail">Syarat dan Ketentuan</span></a> atas pengajuan asuransi Credit Life Zurich.
                                                 </label>
                                             </div>
-                                             <div class="col-md-12 row">
+                                            <div class="col-md-12 row">
                                                 <div class="col-md-12">
                                                     <input class="margin-top-20 btn btn-main" type="submit" value="Submit">    
                                                 </div>
@@ -651,8 +662,8 @@
 
                             </div>
                         </div>
+                    </div>
                 </div>
-            </div>
             </div>
             <div class="col-md-4 ">
                 <div class="detail-box detailed-box-simulation bg-gray">
@@ -688,19 +699,48 @@
 
 
 @section('script')
+<script src="{{ asset('/lib/jquery/masked_input_1.4-min.js') }}"></script>
 <script>
-    $(document)
-            .ready(function () {
+$(document)
+        .ready(function () {
 
-                $('.nav-tabs a:first').tab('show');
-                    lala = 0;
-                $('a[id^="next-form"]')
-                        .click(function () {
-                            console.log(lala++);
-                            next = $(this).attr('target');
+            $('.nav-tabs a:first').tab('show');
+
+            var formData = {};
+            // Form Submition
+            $('form')
+                    .submit(function (e) {
+                        e.preventDefault();
+                        $("html, body").animate({scrollTop: 0}, "slow");
+
+                        if ($(this).attr('next-form')) {
+                            next = $(this).attr('next-form');
                             $('a[href="#' + next + '"]').tab('show');
-                            $("html, body").animate({ scrollTop: 0 }, "slow");
-                        });
-            });
+                            formData[$(this).parent().attr('id')] = $(this).serializeArray();
+                            console.log(formData);
+                        }
+
+                        return false;
+                    });
+            // End of Form Submition
+
+            
+            $('#sameAsDomisili')
+                    .click(function() {
+                        if(this.checked) {
+                            console.log(1);
+                            alamat    = $('textarea[name="personal-contact.alamatDomisili"]').val();
+                            provinsi  = $('select[name="personal-contact.provinsiDomisili"]').val()
+                            kota      = $('select[name="personal-contact.kotaDomisili"]').val();
+                            kecamatan = $('select[name="personal-contact.kecamatanDomisili"]').val();
+                            
+                            $('textarea[name="personal-contact.alamatKTP"]') .val(alamat);
+                            $('select[name="personal-contact.provinsiKTP"]') .val(provinsi);
+                            $('select[name="personal-contact.kotaKTP"]')     .val(kota);
+                            $('select[name="personal-contact.kecamatanKTP"]').val(kecamatan);
+                        }
+                    });
+
+        });
 </script>
 @endsection
