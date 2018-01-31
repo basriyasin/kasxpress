@@ -509,7 +509,7 @@
                             <div id="documents" class="tab-pane fade">
                                 <form autocomplete="off" class="form-horizontal">
                                     <div class="row form__fieldset form-default">
-                                        <div class="small-12 medium-12 columns">
+                                        <div class="col-md-12 columns">
                                             <label class="bold blue f-14 m-bottom-5">Arsip KTP*</label>
                                             <div class="m-bottom-10 upload-container">
                                                 <span class="image-preview">
@@ -521,11 +521,7 @@
                                             <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
                                         </div>
 
-                                        <div class="small-12 columns">
-                                            <hr class="margin-vertical-50">
-                                        </div>
-
-                                        <div class="small-12 medium-12 columns">
+                                        <div class="col-md-12 columns">
                                             <label class="bold blue f-14 m-bottom-5">Arsip NPWP*</label>
                                             <div class="m-bottom-10 upload-container">
                                                 <span class="image-preview">
@@ -537,11 +533,7 @@
                                             <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
                                         </div>
 
-                                        <div class="small-12 columns">
-                                            <hr>
-                                        </div>
-
-                                        <div class="small-12 medium-12 columns">
+                                        <div class="col-md-12 columns">
                                             <label class="bold blue f-14 m-bottom-5">Arsip Cover Buku Tabungan*</label>
                                             <div class="m-bottom-10 upload-container">
                                                 <span class="image-preview">
@@ -553,11 +545,8 @@
                                             <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
                                         </div>
 
-                                        <div class="small-12 columns">
-                                            <hr>
-                                        </div>
 
-                                        <div class="small-12 medium-12 columns">
+                                        <div class="col-md-12 columns">
                                             <label class="bold blue f-14 m-bottom-5">Arsip Slip Gaji Terakhir*</label>
                                             <div class="m-bottom-10 upload-container">
                                                 <span class="image-preview">
@@ -569,11 +558,7 @@
                                             <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
                                         </div>
 
-                                        <div class="small-12 columns">
-                                            <hr>
-                                        </div>
-
-                                        <div class="small-12 medium-12 columns">
+                                        <div class="col-md-12 columns">
                                             <label class="bold blue f-14 m-bottom-5">Bukti Pembayaran Gaji 3 Bulan Terakhir di Rekening Tabungan *</label>
                                             <div class="m-bottom-10 upload-container">
                                                 <span class="image-preview">
@@ -585,11 +570,7 @@
                                             <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
                                         </div>
 
-                                        <div class="small-12 columns">
-                                            <hr>
-                                        </div>
-
-                                        <div class="small-12 medium-12 columns" id="contract-letter">
+                                        <div class="col-md-12 columns" id="contract-letter">
                                             <label class="bold blue f-14 m-bottom-5">Arsip Surat Kontrak*</label>
                                             <div class="m-bottom-10 upload-container">
                                                 <span class="image-preview">
@@ -601,11 +582,7 @@
                                             <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
                                         </div>
 
-                                        <div class="small-12 columns" id="contract-hr">
-                                            <hr>
-                                        </div>
-
-                                        <div class="small-12 medium-12 columns" id="status-permanen" display="none">
+                                        <div class="col-md-12 columns" id="status-permanen" display="none">
                                             <label class="bold blue f-14 m-bottom-5">Arsip Surat Keterangan Penetapan Karyawan*</label>
                                             <div class="m-bottom-10 upload-container">
                                                 <span class="image-preview">
@@ -617,11 +594,7 @@
                                             <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
                                         </div>
 
-                                        <div class="small-12 columns" id="permanen-hr">
-                                            <hr>
-                                        </div>
-
-                                        <div class="small-12 medium-6 columns">
+                                        <div class="col-md-12 columns">
                                             <label class="bold blue f-14 m-bottom-5">Arsip Pas Photo*</label>
                                             <div class="m-bottom-10 upload-container">
                                                 <span class="image-preview">
@@ -634,11 +607,7 @@
                                         </div>
 
 
-                                        <div class="small-12 columns" id="contract-hr">
-                                            <hr>
-                                        </div>
-
-                                        <div class="small-12 medium-12 columns">
+                                        <div class="col-md-12 columns">
                                             <label class="bold blue f-14 m-bottom-5">Arsip Kartu Tanda Pengenal Karyawan*</label>
                                             <div class="m-bottom-10 upload-container">
                                                 <span class="image-preview">
@@ -650,27 +619,23 @@
                                             <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
                                         </div>
 
-                                        <div class="small-12 columns" id="contract-hr">
-                                            <hr>
-                                        </div>
-
                                         <div class="row" id="panel4">
-                                            <div class="small-12 column">
+                                            <div class="col-md-12 column">
                                                 <h4 class="text-uppercase m-bot-10">Pernyataan Borrower</h4>
                                             </div>
-                                            <div class="small-12 column">
+                                            <div class="col-md-12 column">
                                                 <label>
                                                     <input type="checkbox" name="agree1" required>
                                                     Saya menyatakan bahwa data-data yang telah saya isi di atas adalah valid dan saya telah melakukan pengecekan kebenaran data-data tersebut.
                                                 </label>
                                             </div>
-                                            <div class="small-12 column">
+                                            <div class="col-md-12 column">
                                                 <label>
                                                     <input type="checkbox" name="agree2" required>
                                                     Dengan mengisi formulir ini, saya menyatakan bahwa pihak Investree berhak melakukan pengecekan keabsahan data yang telah saya berikan.
                                                 </label>
                                             </div>
-                                            <div class="small-12 column" style="text-align:center;">
+                                            <div class="col-md-12 column" style="text-align:center;">
                                                 <label>
                                                     Saya menyatakan bahwa telah membaca, mengerti dan menyetujui <a href="https://www.investree.id/pdf/deklarasi_dan_autorisasi" class="fancypdf orange"><span class="imageshow fancypdf thumbnail">Deklarasi dan Autorisasi</span></a> serta <a href="https://www.investree.id/pdf/syarat_dan_ketentuan_zurich" class="fancypdf f-12 orange"><span class="imageshow fancypdf thumbnail">Syarat dan Ketentuan</span></a> atas pengajuan asuransi Credit Life Zurich.
                                                 </label>
