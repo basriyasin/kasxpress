@@ -66,13 +66,13 @@
                                 <div class="item">
                                     <div class="title">
                                         Nilai Pinjaman:<br>
-                                        <span class="item" id="info-credit-amount">Rp. 5.000.000,00</span>
+                                        <span class="item" id="info-credit-amount">Rp. 0,00</span>
                                     </div>
                                 </div> 
                                 <div class="item">
                                     <div class="title">
                                         Nilai Pencairan:<br>
-                                        <span class="item" id="info-credit-nett">Rp. 4.750.000,00</span>
+                                        <span class="item" id="info-credit-nett">Rp. 0,00</span>
                                     </div>
                                 </div> 
                             </div>
@@ -96,7 +96,7 @@
                                 <div class="item">
                                     <div class="title">
                                         Cicilan Per Bulan:<br>
-                                        <span class="item" id="info-monthly-credit">Rp. 461.667,00 - Rp. 526.667,00</span><br>
+                                        <span class="item" id="info-monthly-credit">Rp. 0,00 - Rp. 0,00</span><br>
                                         <span class="text-small text-muted"><i>*) Biaya pinjaman diipengaruhi oleh hasil analisis credit-scoring dari data peminijam.</i></span>
                                     </div>
                                 </div> 
@@ -107,7 +107,7 @@
                                 <div class="item">
                                     <div class="title">
                                         Lama Pinjaman:<br>
-                                        <span class="item" id="info-credit-terms">12 Bulan</span>
+                                        <span class="item" id="info-credit-terms">1 Bulan</span>
                                     </div>
                                 </div> 
                             </div>
