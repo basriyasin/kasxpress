@@ -1735,3 +1735,19 @@ textarea.form-control {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
 }
+
+.nav-tab-log li {
+    background: none;
+}
+
+.nav-tab-log li a {
+    background: none;
+    height: 100%;
+    display: block;
+    vertical-align: middle;
+}
+
+.nav-tab-log li a.active {
+    background: #2dca98;
+    color: white;
+}

@@ -12,23 +12,23 @@
             <h3 class="col-md-12 text-center">Pengajuan Pinjaman Karyawan PT. SUSANTO</h3>
             <div class="col-md-8">
                 <div class="detail-box">
-                    <ul class="nav nav-tabs">
-                        <li class="active">
+                    <ul class="nav nav-tabs nav-tab-log">
+                        <li class="active bg-gray col-lg-4 col-md-6 col-sm-12">
                             <a href="#personal-data" data-toggle="tab">Data Pribadi</a>
                         </li>
-                        <li class="">
+                        <li class="bg-gray col-lg-4 col-md-6 col-sm-12">
                             <a href="#personal-contact" data-toggle="tab">Kontak dan Domisili</a>
                         </li>
-                        <li class="">
+                        <li class="bg-gray col-lg-4 col-md-6 col-sm-12">
                             <a href="#family-contact" data-toggle="tab">Kerabat Dekat</a>
                         </li>
-                        <li class="">
+                        <li class="bg-gray col-lg-4 col-md-6 col-sm-12">
                             <a href="#job-detail" data-toggle="tab">Data Pekerjaan</a>
                         </li>
-                        <li class="">
+                        <li class="bg-gray col-lg-4 col-md-6 col-sm-12">
                             <a href="#bank-detail" data-toggle="tab">Data Bank</a>
                         </li>
-                        <li class="">
+                        <li class="bg-gray col-lg-4 col-md-6 col-sm-12">
                             <a href="#documents" data-toggle="tab">Dokumen Kelengkapan</a>
                         </li>
                         </li>
