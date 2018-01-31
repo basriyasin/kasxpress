@@ -33,9 +33,9 @@
                         </li>
                         </li>
                     </ul>
-                    <div class="container">
-                        <div class="tab-content">
-                            <div id="personal-data" class="tab-pane fade in active">
+                        <div class="container">
+                            <div class="tab-content">
+                                <div id="personal-data" class="tab-pane fade in active">
                                 <form autocomplete="off" class="col-md-12 row">
                                     <div class="col-md-12 row">
                                         <div class="col-md-3">
@@ -52,12 +52,12 @@
                                     </div>
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
-                                            <label>Tempat Lahir</label>
+                                            <label>Tanggal Lahir</label>
                                             <input class="form-control" type="date" name="tempatLahir" placeholder="Contoh: Jakarta">
                                         </div>
                                         <div class="col-md-6">
-                                            <label>Tanggal Lahir</label>
-                                            <input class="form-control" name="tanggalLahir" placeholder="Tanggal Lahir" required="">
+                                            <label>Tempat Lahir</label>
+                                            <input class="form-control" name="tanggalLahir" placeholder="Tempat Lahir" required="">
                                         </div>
                                     </div>
 
@@ -128,9 +128,9 @@
                                         </div>
                                     </div>
                                 </form>
-                            </div>
-                            <div id="personal-contact" class="tab-pane fade">
-                                <form>
+                                </div>
+                                <div id="personal-contact" class="tab-pane fade">
+                                <form autocomplete="off" class="col-md-12 row">
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
                                             <label>No. HP</label>
@@ -282,9 +282,9 @@
                                         </div>
                                     </div>
                                 </form>
-                            </div>
-                            <div id="family-contact" class="tab-pane fade">
-                                <form>
+                                </div>
+                                <div id="family-contact" class="tab-pane fade">
+                                <form autocomplete="off" class="col-md-12 row">
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
                                             <label>Nama Keluarga Tidak Serumah</label>
@@ -385,9 +385,7 @@
                                     </div>
                                 </form>
                             </div>
-                            <div id="job-detail" class="tab-pane fade">
-
-
+                                <div id="job-detail" class="tab-pane fade">
                                 <form autocomplete="off" class="col-md-12 row">
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
@@ -440,9 +438,6 @@
 
                             </div>
                             <div id="bank-detail" class="tab-pane fade">
-
-
-
                                 <form autocomplete="off" class="col-md-12 row">
                                     <div class="col-md-12 row">
                                         <div class="col-md-5">
@@ -691,8 +686,8 @@
 
                             </div>
                         </div>
-                    </div>
                 </div>
+            </div>
             </div>
             <div class="col-md-4 ">
                 <div class="detail-box detailed-box-simulation bg-gray">
@@ -733,7 +728,14 @@
             .ready(function () {
 
                 $('.nav-tabs a:first').tab('show');
-
+                    lala = 0;
+                $('a[id^="next-form"]')
+                        .click(function () {
+                            console.log(lala++);
+                            next = $(this).attr('target');
+                            $('a[href="#' + next + '"]').tab('show');
+                            $("html, body").animate({ scrollTop: 0 }, "slow");
+                        });
             });
 </script>
 @endsection

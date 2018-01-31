@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
@@ -10,15 +9,28 @@ use App\Http\Requests;
 
 class BorrowerController extends Controller {
 
-    protected function registerGetStep(Request $r, $step) {
-        return view('borrower.register.step-'.$step);
+    protected function registerGetStep1(Request $r) {
+        return view('borrower.register.step-1');
     }
-    
-    protected function registerPostStep(Request $r, $step) {
-        $step = (int)preg_filter('/\D/', '', $step);
-        
-        return ($step >= 0 && $val <= 10)
-                ? view('borrower.register.step.'.$step)
-                : view('errors.404');
+
+    protected function registerGetStep2(Request $r) {
+        return view('borrower.register.step-2');
     }
+
+    protected function registerGetStep3(Request $r) {
+        return view('borrower.register.step-3');
+    }
+
+    protected function registerPostStep1(Request $r) {
+        return redirect()->route('borrower.register.get.step-2');
+    }
+
+    protected function registerPostStep2(Request $r) {
+        return redirect()->route('borrower.register.get.step-3');
+    }
+
+    protected function registerPostStep3(Request $r) {
+        return view('borrower.register.step-3');
+    }
+
 }
