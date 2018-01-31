@@ -2,7 +2,7 @@
     <div class="container">
 
         <div id="logo" class="pull-left">
-            <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a>
+            <a href="#hero"><img src="{{ asset('img/logo.png')}}" alt="" title="" /></img></a>
         </div>
 
         <nav id="nav-menu-container">

@@ -22,8 +22,8 @@
                 <h3 class="about-title">Cara Kerja <em>Peer-to-Peer Lending</em></h3>
                 <div class="large-2 medium-1 small-4 columns small-centered border-green margin-bottom-20"></div>
             </div>
-            <div class="medium-1 text-center">
-                <img src="{{ asset('img/how_it_works.png') }}">
+            <div class="col-md-12 text-center">
+                <img class="col-lg-4 col-md-6 col-sm-12" src="{{ asset('img/how_it_works.png') }}">
             </div>
             <p class="text-justify">
                 Familiar dengan situasi ini? — Seorang teman ingin meminjam kepada Anda tapi segan. Ia lalu memutuskan meminta bantuan kepada bank namun terkendala persyaratan yang rumit. 

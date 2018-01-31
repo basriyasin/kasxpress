@@ -422,11 +422,11 @@
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
                                             <label>Gaji Per Bulan</label>
-                                            <input class="form-control" name="gaji"  required="" pattern="[0-9]*">
+                                            <input class="form-control" name="gaji"  placeholder="Gaji (IDR)"required="" pattern="[0-9]*">
                                         </div>
                                         <div class="col-md-6">
                                             <label>Pengeluaran Per Bulan</label>
-                                            <input class="form-control" name="pengeluaran"  required="">
+                                            <input class="form-control" name="pengeluaran"  placeholder="Pengeluaran (IDR)" required="">
                                         </div>
                                     </div>
                                     <div class="col-md-12 row">
@@ -489,14 +489,14 @@
                                         </div>
                                         <div class="col-md-7">
                                             <label>No Rekening</label>
-                                            <input class="form-control" name="no-rekening" required="">
+                                            <input class="form-control" name="no-rekening" placeholder="No Rekening" required="">
                                         </div>
                                     </div>
                                     <div class="col-md-12 row">
                                         <div class="col-md-5"></div>
                                         <div class="col-md-7">
                                             <label>Atas Nama</label>
-                                            <input class="form-control" name="atas_nama" required="">
+                                            <input class="form-control" name="atas_nama" placeholder="Nama Pemilik Rekening" required="">
                                         </div>
                                     </div>
                                     <div class="col-md-12 row">
