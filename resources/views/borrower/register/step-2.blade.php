@@ -8,7 +8,7 @@
 <section id="hero" class="hero-bg-1">
     <div class="row height-100">
 
-        <div class="col-md-10 row col-center margin-top-20"  id="borrowerInfo">
+        <div class="col-md-10 row col-center margin-top-20 borrowerInfo">
             <h3 class="margin-vertical-50 col-md-12">Simulasi Pinjaman</h3>
             <div class="col-md-6">
                 <div class="detail-box">

@@ -1618,34 +1618,33 @@ select.form-control {
     background: #eee;
 }
 
-#borrowerInfo .tab-content div {
-    padding: 20px;
+.borrowerInfo .tab-content div {
+    padding: 10px;
     color: black !important;
 }
 
-#borrowerInfo .tab-content div .form-control {
+.borrowerInfo .tab-content div .form-control {
     border: 1px solid #979797;
     padding: 10px 0px;
     color: #000;
     border-radius: 5px;
-    height: 40px;
     font-size: 14px;
     padding: 0.5rem;
 }
 
 
-#borrowerInfo .tab-content div .form-control::placeholder {
+.borrowerInfo .tab-content div .form-control::placeholder {
     padding: 10px 0px;
     color: #aaa ;
 }
 
 
-#borrowerInfo .tab-content div .form-control:invalid{
+.borrowerInfo .tab-content div .form-control:invalid{
     box-shadow: none;
 }
 
 
-#borrowerInfo .tab-content div .form-control:focus {
+.borrowerInfo .tab-content div .form-control:focus {
     border-radius: 5px !important;
     border: 1px solid #164376 !important;
     font-size: 14px;
@@ -1656,7 +1655,7 @@ select.form-control {
 }
 
 
-#borrowerInfo .tab-content div select.form-control{
+.borrowerInfo .tab-content div select.form-control{
     height: 2.4375rem !important;    
     -webkit-appearance: none;  /*Removes default chrome and safari style*/
     -moz-appearance: none;  /*Removes default style Firefox*/
@@ -1678,10 +1677,13 @@ select.form-control {
     padding-left: 1rem;
 }
 
-#borrowerInfo .tab-content div select.form-control:disabled {
+.borrowerInfo .tab-content div select.form-control:disabled {
     color: #aaa;    
 }
 
+.borrowerInfo .btn {
+    float: right;
+}
 
 textarea.form-control {
     height: 100px !important;
@@ -1698,4 +1700,38 @@ textarea.form-control {
 
 .border-bottom {
     border-bottom: 1px solid #aaa !important;
+}
+
+.m-bottom-10 {
+    margin-bottom: 10px !important;
+}
+
+.borrowerInfo label{
+    font-size: 14px;
+    color: #154276;
+    margin: 0 0 10px;
+}
+
+
+.button--grey--bordered {
+    border: 1px solid #154276;
+}
+.button--grey, .wizard .actions ul li a[href="#cancel"] {
+    background: #F7F9FA;
+    color: #154276;
+}
+.button--upload {
+    font-size: 14px;
+    height: 40px;
+    line-height: 38px;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.show-for-sr, .show-on-focus {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
 }

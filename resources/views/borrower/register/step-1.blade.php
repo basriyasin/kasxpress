@@ -6,9 +6,9 @@
 
 @section('content')
 <section id="hero" class="hero-bg-1">
-    <div class="row height-100 margin-vertical-50">
+    <div class="row height-100 margin-vertical-50 borrowerInfo">
 
-        <div class="col-md-7 col-center"
+        <div class="col-md-7 col-center">
              <div class="row margin-top-20">
                 <div class="detail-box">
                     <div class="header">

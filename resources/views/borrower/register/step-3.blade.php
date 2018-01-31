@@ -8,7 +8,7 @@
 <section id="hero" class="hero-bg-1">
     <div class="row height-100">
 
-        <div class="col-md-10 row col-center margin-top-20 margin-bottom-20"  id="borrowerInfo">
+        <div class="col-md-10 row col-center margin-top-20 margin-bottom-20 borrowerInfo">
             <h3 class="col-md-12 text-center">Pengajuan Pinjaman Karyawan PT. SUSANTO</h3>
             <div class="col-md-8">
                 <div class="detail-box">
@@ -102,9 +102,6 @@
                                     </div>
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
-                                            &nbsp;
-                                        </div>
-                                        <div class="col-md-6">
                                             <label>Jumlah Tanggungan</label>
                                             <select class="form-control" name="tanggungan" placeholder="" required="">
                                                 <option disabled selected="">-- Jumlah Tanggungan --</option>
@@ -121,9 +118,12 @@
                                                 <option value="10">10</option>
                                             </select>
                                         </div>
+                                        <div class="col-md-6">
+                                            &nbsp;
+                                        </div>
                                     </div>
                                     <div class="col-md-12 row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
                                         </div>
                                     </div>
@@ -207,7 +207,7 @@
                                     </div>
                                     <div class="col-md-12 row">
                                         <div class="col-md-12 ">
-                                            <div class="form-control">
+                                            <div class="form-control col-md-12">
                                                 <input type="checkbox"> Alamat Domisili sama dengan alamat KTP
                                             </div>
                                         </div>
@@ -378,6 +378,11 @@
                                             </select>
                                         </div>
                                     </div>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-12">
+                                            <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
+                                        </div>
+                                    </div>
                                 </form>
                             </div>
                             <div id="job-detail" class="tab-pane fade">
@@ -426,12 +431,12 @@
                                             <input class="form-control" name="pengeluaran"  required="">
                                         </div>
                                     </div>
-
-
-                                    <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-12">
+                                            <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
+                                        </div>
+                                    </div>
                                 </form>
-
-
 
                             </div>
                             <div id="bank-detail" class="tab-pane fade">
@@ -493,33 +498,193 @@
                                         </div>
                                     </div>
                                     <div class="col-md-12 row">
-                                        <div class="col-md-5">
-                                        </div>
+                                        <div class="col-md-5"></div>
                                         <div class="col-md-7">
                                             <label>Atas Nama</label>
                                             <input class="form-control" name="atas_nama" required="">
                                         </div>
                                     </div>
-
-                                    <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
-                                </form>
-
-
-                            </div>
-                            <div id="documents" class="tab-pane fade">
-
-                                <form autocomplete="off" class="form-horizontal">
-                                    <div class="form-group">
-                                        <label class="col-md-4 control-label">Arsip KTP</label>
+                                    <div class="col-md-12 row">
                                         <div class="col-md-12">
-                                            <button class="btn btn-primary">Upload File</button>
+                                            <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
                                         </div>
                                     </div>
-                                    <hr class="margin-vertical-50">
-                                      <div class="form-group">
-                                        <label class="col-md-4 control-label">Arsip NPWP</label>
-                                        <div class="col-md-12">
-                                            <input type="file" name="arsipFile">Upload File</button>
+                                </form>
+                            </div>
+                            <div id="documents" class="tab-pane fade">
+                                <form autocomplete="off" class="form-horizontal">
+                                    <div class="row form__fieldset form-default">
+                                        <div class="small-12 medium-12 columns">
+                                            <label class="bold blue f-14 m-bottom-5">Arsip KTP*</label>
+                                            <div class="m-bottom-10 upload-container">
+                                                <span class="image-preview">
+                                                </span>
+                                                <label for="foto-ktp" class="button upload-label button--grey button--upload button--grey--bordered">Upload File</label>
+                                                <input type="file" data-id="3482" id="foto-ktp" class="show-for-sr upload" upload-status="Consumer" data-type="consumer-ktp" required>
+                                                <input type="hidden" name="cpd_ktp_file" class="filename" value="">
+                                            </div>
+                                            <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
+                                        </div>
+
+                                        <div class="small-12 columns">
+                                            <hr class="margin-vertical-50">
+                                        </div>
+
+                                        <div class="small-12 medium-12 columns">
+                                            <label class="bold blue f-14 m-bottom-5">Arsip NPWP*</label>
+                                            <div class="m-bottom-10 upload-container">
+                                                <span class="image-preview">
+                                                </span>
+                                                <label for="foto-npwp" class="button upload-label button--grey button--upload button--grey--bordered">Upload File</label>
+                                                <input type="file" data-id="3482" id="foto-npwp" class="show-for-sr upload" upload-status="Consumer" data-type="consumer-npwp" required>
+                                                <input type="hidden" name="cpd_npwp_file" class="filename" value="">
+                                            </div>
+                                            <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
+                                        </div>
+
+                                        <div class="small-12 columns">
+                                            <hr>
+                                        </div>
+
+                                        <div class="small-12 medium-12 columns">
+                                            <label class="bold blue f-14 m-bottom-5">Arsip Cover Buku Tabungan*</label>
+                                            <div class="m-bottom-10 upload-container">
+                                                <span class="image-preview">
+                                                </span>
+                                                <label for="cover-tabungan" class="button upload-label button--grey button--upload button--grey--bordered">Upload File</label>
+                                                <input type="file" data-id="3482" id="cover-tabungan" class="show-for-sr upload" upload-status="Consumer" data-type="consumer-tabungan" required>
+                                                <input type="hidden" name="cpd_cover_tabungan" class="filename" value="">
+                                            </div>
+                                            <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
+                                        </div>
+
+                                        <div class="small-12 columns">
+                                            <hr>
+                                        </div>
+
+                                        <div class="small-12 medium-12 columns">
+                                            <label class="bold blue f-14 m-bottom-5">Arsip Slip Gaji Terakhir*</label>
+                                            <div class="m-bottom-10 upload-container">
+                                                <span class="image-preview">
+                                                </span>
+                                                <label for="latest-salary" class="button upload-label button--grey button--upload button--grey--bordered">Upload File</label>
+                                                <input type="file" data-id="" id="latest-salary" class="show-for-sr upload" upload-status="Consumer" data-type="latest-salary" required>
+                                                <input type="hidden" name="cld_latest_salary_slip_file" class="filename" value="">
+                                            </div>
+                                            <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
+                                        </div>
+
+                                        <div class="small-12 columns">
+                                            <hr>
+                                        </div>
+
+                                        <div class="small-12 medium-12 columns">
+                                            <label class="bold blue f-14 m-bottom-5">Bukti Pembayaran Gaji 3 Bulan Terakhir di Rekening Tabungan *</label>
+                                            <div class="m-bottom-10 upload-container">
+                                                <span class="image-preview">
+                                                </span>
+                                                <label for="consumer-bukti-gaji" class="button upload-label button--grey button--upload button--grey--bordered">Upload File</label>
+                                                <input type="file" data-id="" id="consumer-bukti-gaji" class="show-for-sr upload" upload-status="Consumer" data-type="consumer-bukti-gaji" required>
+                                                <input type="hidden" name="cld_bukti_pembayaran_gaji" class="filename" value="">
+                                            </div>
+                                            <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
+                                        </div>
+
+                                        <div class="small-12 columns">
+                                            <hr>
+                                        </div>
+
+                                        <div class="small-12 medium-12 columns" id="contract-letter">
+                                            <label class="bold blue f-14 m-bottom-5">Arsip Surat Kontrak*</label>
+                                            <div class="m-bottom-10 upload-container">
+                                                <span class="image-preview">
+                                                </span>
+                                                <label for="contract-letter-file" class="button upload-label button--grey button--upload button--grey--bordered">Upload File</label>
+                                                <input type="file" data-id="" id="contract-letter-file" class="show-for-sr upload" upload-status="Consumer" data-type="contract-letter" required>
+                                                <input type="hidden" name="cld_contract_letter_file" class="filename" value="">
+                                            </div>
+                                            <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
+                                        </div>
+
+                                        <div class="small-12 columns" id="contract-hr">
+                                            <hr>
+                                        </div>
+
+                                        <div class="small-12 medium-12 columns" id="status-permanen" display="none">
+                                            <label class="bold blue f-14 m-bottom-5">Arsip Surat Keterangan Penetapan Karyawan*</label>
+                                            <div class="m-bottom-10 upload-container">
+                                                <span class="image-preview">
+                                                </span>
+                                                <label for="consumer-sk-penetapan" class="button upload-label button--grey button--upload button--grey--bordered">Upload File</label>
+                                                <input type="file" data-id="" id="consumer-sk-penetapan" class="show-for-sr upload" upload-status="Consumer" data-type="consumer-sk-penetapan">
+                                                <input type="hidden" name="cld_surat_keterangan_penetapan" class="filename" value="">
+                                            </div>
+                                            <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
+                                        </div>
+
+                                        <div class="small-12 columns" id="permanen-hr">
+                                            <hr>
+                                        </div>
+
+                                        <div class="small-12 medium-6 columns">
+                                            <label class="bold blue f-14 m-bottom-5">Arsip Pas Photo*</label>
+                                            <div class="m-bottom-10 upload-container">
+                                                <span class="image-preview">
+                                                </span>
+                                                <label for="consumer-loan-photo" class="button upload-label button--grey button--upload button--grey--bordered">Upload File</label>
+                                                <input type="file" data-id="" id="consumer-loan-photo" class="show-for-sr upload" upload-status="Consumer" data-type="consumer-loan-photo" required>
+                                                <input type="hidden" name="cld_loan_photo" class="filename" value="">
+                                            </div>
+                                            <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
+                                        </div>
+
+
+                                        <div class="small-12 columns" id="contract-hr">
+                                            <hr>
+                                        </div>
+
+                                        <div class="small-12 medium-12 columns">
+                                            <label class="bold blue f-14 m-bottom-5">Arsip Kartu Tanda Pengenal Karyawan*</label>
+                                            <div class="m-bottom-10 upload-container">
+                                                <span class="image-preview">
+                                                </span>
+                                                <label for="consumer-id-card" class="button upload-label button--grey button--upload button--grey--bordered">Upload File</label>
+                                                <input type="file" data-id="" id="consumer-id-card" class="show-for-sr upload" upload-status="Consumer" data-type="consumer-id-card" required>
+                                                <input type="hidden" name="cld_id_card" class="filename" value="">
+                                            </div>
+                                            <small class="block f-14 light-grey"><em>Format yang disarankan: jpg, pdf, png, gif, bmp (maks. 10 MB)</em></small>
+                                        </div>
+
+                                        <div class="small-12 columns" id="contract-hr">
+                                            <hr>
+                                        </div>
+
+                                        <div class="row" id="panel4">
+                                            <div class="small-12 column">
+                                                <h4 class="text-uppercase m-bot-10">Pernyataan Borrower</h4>
+                                            </div>
+                                            <div class="small-12 column">
+                                                <label>
+                                                    <input type="checkbox" name="agree1" required>
+                                                    Saya menyatakan bahwa data-data yang telah saya isi di atas adalah valid dan saya telah melakukan pengecekan kebenaran data-data tersebut.
+                                                </label>
+                                            </div>
+                                            <div class="small-12 column">
+                                                <label>
+                                                    <input type="checkbox" name="agree2" required>
+                                                    Dengan mengisi formulir ini, saya menyatakan bahwa pihak Investree berhak melakukan pengecekan keabsahan data yang telah saya berikan.
+                                                </label>
+                                            </div>
+                                            <div class="small-12 column" style="text-align:center;">
+                                                <label>
+                                                    Saya menyatakan bahwa telah membaca, mengerti dan menyetujui <a href="https://www.investree.id/pdf/deklarasi_dan_autorisasi" class="fancypdf orange"><span class="imageshow fancypdf thumbnail">Deklarasi dan Autorisasi</span></a> serta <a href="https://www.investree.id/pdf/syarat_dan_ketentuan_zurich" class="fancypdf f-12 orange"><span class="imageshow fancypdf thumbnail">Syarat dan Ketentuan</span></a> atas pengajuan asuransi Credit Life Zurich.
+                                                </label>
+                                            </div>
+                                             <div class="col-md-12 row">
+                                                <div class="col-md-12">
+                                                    <input class="margin-top-20 btn btn-main" type="submit" value="Submit">    
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </form>
