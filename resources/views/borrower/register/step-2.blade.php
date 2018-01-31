@@ -19,13 +19,13 @@
                                     {{ csrf_field() }}
                                     <div class="col-md-12">
                                         <label>Jumlah Pinjaman</label>
-                                        <input class="form-control" name="namaLengkap" placeholder="" required  >
+                                        <input class="form-control" id="credit-amount" name="amount" placeholder="" maxLength="12" required  >
                                     </div>
                                     <div class="col-md-12">
                                         <label>Lama Pinjaman</label>
-                                        <select class="form-control" name="lamaPinjaman" required="">
+                                        <select class="form-control" id="credit-terms" name="terms" required="">
                                             @for($i=1; $i<=24; $i++)
-                                                <option >{{ $i }}</option>
+                                                <option value="{{ $i }}">{{ $i }} Bulan</option>
                                             @endfor
                                         </select>
                                     </div>
@@ -66,13 +66,13 @@
                                 <div class="item">
                                     <div class="title">
                                         Nilai Pinjaman:<br>
-                                        <span class="item">Rp. 5.000.000,00</span>
+                                        <span class="item" id="info-credit-amount">Rp. 5.000.000,00</span>
                                     </div>
                                 </div> 
                                 <div class="item">
                                     <div class="title">
                                         Nilai Pencairan:<br>
-                                        <span class="item">Rp. 4.750.000,00</span>
+                                        <span class="item" id="info-credit-nett">Rp. 4.750.000,00</span>
                                     </div>
                                 </div> 
                             </div>
@@ -80,13 +80,13 @@
                                 <div class="item">
                                     <div class="title">
                                         Biaya KasXpress:<br>
-                                        <span class="item">3% - 5%</span>
+                                        <span class="item" id="info-administration">3% - 5%</span>
                                     </div>
                                 </div> 
                                 <div class="item">
                                     <div class="title">
                                         Bunga <i>Flat</i> Per Bulan:<br>
-                                        <span class="item">0.90% - 2.20%</span>
+                                        <span class="item" id="info-interest">0.90% - 2.20%</span>
                                     </div>
                                 </div> 
                             </div>
@@ -96,7 +96,7 @@
                                 <div class="item">
                                     <div class="title">
                                         Cicilan Per Bulan:<br>
-                                        <span class="item">Rp. 461.667,00 - Rp. 526.667,00</span><br>
+                                        <span class="item" id="info-monthly-credit">Rp. 461.667,00 - Rp. 526.667,00</span><br>
                                         <span class="text-small text-muted"><i>*) Biaya pinjaman diipengaruhi oleh hasil analisis credit-scoring dari data peminijam.</i></span>
                                     </div>
                                 </div> 
@@ -107,7 +107,7 @@
                                 <div class="item">
                                     <div class="title">
                                         Lama Pinjaman:<br>
-                                        <span class="item">12 Bulan</span>
+                                        <span class="item" id="info-credit-terms">12 Bulan</span>
                                     </div>
                                 </div> 
                             </div>
@@ -122,12 +122,5 @@
 
 
 @section('script')
-<script>
-//    $(document)
-//            .ready(function () {
-//
-//                $('.nav-tabs a:first').tab('show');
-//
-//            });
-</script>
+<script src="{{ asset('/js/borrower.register.step-2.js') }}"></script>
 @endsection
