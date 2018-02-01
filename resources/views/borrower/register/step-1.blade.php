@@ -18,7 +18,7 @@
                     </div>
                     <div class="container">
                         <div class="tab-content">
-                            <form autocomplete="off" class="col-md-12 row" method="post" action="{{ route('borrower.register.post.step-1') }}">
+                            <form autocomplete="off" method="post" action="{{ route('borrower.register.post.step-1') }}">
                                 {{ csrf_field() }}
                                 <div class="col-md-12 row">
                                     <div class="col-md-12">

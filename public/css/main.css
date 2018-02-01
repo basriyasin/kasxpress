@@ -80,7 +80,6 @@ h1, h2, h3, h4, h5, h6 {
     }    
     
     .row div {
-        margin-top: 20px;
         margin-bottom: 20px;
     }
 }
@@ -1648,7 +1647,7 @@ select.form-control {
 }
 
 .borrowerInfo .tab-content div {
-    padding: 10px;
+    padding-top: 10px;
     color: black !important;
 }
 

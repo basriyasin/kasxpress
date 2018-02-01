@@ -15,7 +15,7 @@
                     <div class="container">
                         <div class="tab-content">
                             <div class="col-md-12 row">
-                                <form autocomplete="off" class="col-md-12 row"  method="post" action="{{ route('borrower.register.post.step-2') }}">
+                                <form autocomplete="off" method="post" action="{{ route('borrower.register.post.step-2') }}">
                                     {{ csrf_field() }}
                                     <div class="col-md-12">
                                         <label>Jumlah Pinjaman</label>

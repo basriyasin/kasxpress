@@ -36,7 +36,7 @@
                     <div class="container">
                         <div class="tab-content">
                             <div id="personal-data" class="tab-pane fade in active">
-                                <form autocomplete="off" class="col-md-12 row" id="data-form" next-form="personal-contact">
+                                <form autocomplete="off" id="data-form" next-form="personal-contact">
                                     <div class="col-md-12 row">
                                         <div class="col-md-3">
                                             <label>Sapaan</label>
@@ -129,19 +129,16 @@
                                                 <option value="10">10</option>
                                             </select>
                                         </div>
-                                        <div class="col-md-6">
-                                            &nbsp;
-                                        </div>
                                     </div>
                                     <div class="col-md-12 row">
                                         <div class="col-md-12">
-                                            <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
+                                            <input class="margin-top-20 margin-bottom-20 btn btn-main" type="submit" value="Selanjutnya">    
                                         </div>
                                     </div>
                                 </form>
                             </div>
                             <div id="personal-contact" class="tab-pane fade">
-                                <form autocomplete="off" class="col-md-12 row" id="data-form" next-form="family-contact"> 
+                                <form autocomplete="off" id="data-form" next-form="family-contact"> 
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
                                             <label>No. HP</label>
@@ -286,16 +283,16 @@
                                                 <option >Setiabudi</option>
                                             </select>
                                         </div>
-                                        <div class="col-md-12 row">
-                                            <div class="col-md-12">
-                                                <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
-                                            </div>
+                                    </div>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-12">
+                                            <input class="margin-top-20 margin-bottom-20 btn btn-main" type="submit" value="Selanjutnya">    
                                         </div>
                                     </div>
                                 </form>
                             </div>
                             <div id="family-contact" class="tab-pane fade">
-                                <form autocomplete="off" class="col-md-12 row" id="data-form" next-form="job-detail">
+                                <form autocomplete="off" id="data-form" next-form="job-detail">
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
                                             <label>Nama Keluarga Tidak Serumah</label>
@@ -391,13 +388,13 @@
                                     </div>
                                     <div class="col-md-12 row">
                                         <div class="col-md-12">
-                                            <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
+                                            <input class="margin-top-20 margin-bottom-20 btn btn-main" type="submit" value="Selanjutnya">    
                                         </div>
                                     </div>
                                 </form>
                             </div>
                             <div id="job-detail" class="tab-pane fade" id="data-form" >
-                                <form autocomplete="off" class="col-md-12 row" next-form="bank-detail">
+                                <form autocomplete="off" next-form="bank-detail">
                                     <div class="col-md-12 row">
                                         <div class="col-md-6">
                                             <label>Nama Perusahaan</label>
@@ -442,14 +439,14 @@
                                     </div>
                                     <div class="col-md-12 row">
                                         <div class="col-md-12">
-                                            <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
+                                            <input class="margin-top-20 margin-bottom-20 btn btn-main" type="submit" value="Selanjutnya">    
                                         </div>
                                     </div>
                                 </form>
 
                             </div>
                             <div id="bank-detail" class="tab-pane fade">
-                                <form autocomplete="off" class="col-md-12 row" id="data-form" next-form="documents">
+                                <form autocomplete="off" id="data-form" next-form="documents">
                                     <div class="col-md-12 row">
                                         <div class="col-md-5">
                                             <label>Nama Bank</label>
@@ -504,15 +501,14 @@
                                         </div>
                                     </div>
                                     <div class="col-md-12 row">
-                                        <div class="col-md-5"></div>
-                                        <div class="col-md-7">
+                                        <div class="col-md-7 ml-md-auto">
                                             <label>Atas Nama</label>
                                             <input class="form-control" name="bank-detail.atas_nama" placeholder="Nama Pemilik Rekening" required>
                                         </div>
                                     </div>
                                     <div class="col-md-12 row">
                                         <div class="col-md-12">
-                                            <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
+                                            <input class="margin-top-20 margin-bottom-20 btn btn-main" type="submit" value="Selanjutnya">    
                                         </div>
                                     </div>
                                 </form>
@@ -653,7 +649,7 @@
                                             </div>
                                             <div class="col-md-12 row">
                                                 <div class="col-md-12">
-                                                    <input class="margin-top-20 btn btn-main" type="submit" value="Submit">    
+                                                    <input class="margin-top-20 margin-bottom-20 btn btn-main" type="submit" value="Submit">
                                                 </div>
                                             </div>
                                         </div>
