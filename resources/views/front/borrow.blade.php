@@ -55,14 +55,13 @@
 <section id="section" class="hero-bg-2 text-black">
     <div class="hero-container no-bg col-md-12">
         <div class="row">
-            <div class="col-md-10 col-center text-center white">
+            <div class="col-md-10 col-sm-10 col-center text-center white">
                 <div class="section-header text-left wow fadeInDown">
                     Siapapun Anda - manajer, staf admin, hingga petugas kebersihan - berhak mendapatkan kehidupan 
                     yang layak dan bahagia. Namun terkadang, adanya kebutuhan mendadak di samping kebutuhan 
                     sehari-hari dapat menjadi beban yang besar, terlebih saat Anda memiliki kondisi finansial 
                     yang kurang stabil.
                 </div>
-                <br>
                 <div class="row">
                     <div class="col-md-5 feature-2 col-center wow fadeInLeft">
                         <h5 class="text-left">Tak perlu khawatir, kami punya solusinya.</h5>

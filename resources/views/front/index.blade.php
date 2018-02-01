@@ -95,14 +95,14 @@
                     dengan menghubungkan Karyawan berpotensi dan pemberi pinjaman. Pendekatan KasXpress telah menciptakan suku 
                     bunga kompetitif bagi Karyawan peminjam dan alternatif investasi yang aman dan menarik bagi pemberi pinjaman.
                 </p>
-                <ul class="nav">
-                    <li class="col-xs-6 col-center">
-                        <a href="#"><h5>Perkembangan Kami</h5></a>
-                    </li>
-                    <li class="col-xs-6 col-center">
-                        <a href="#"><h5>Turut Bersama Anda</h5></a>
-                    </li>
-                </ul>
+                <div class="col-md-12 row">
+                    <div class="col-sm-6 col-center">
+                        <a href="#">Perkembangan Kami</a>
+                    </div>
+                    <div class="col-sm-6 col-center">
+                        <a href="#">Turut Bersama Anda</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -206,8 +206,8 @@
                         <p class="description">Lebih ketat dari review yang dilakukan oleh bank dan multifinance untuk para peminjam</p>
                     </div>
                 </div>
-                
-                
+
+
                 <!--
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                     <div class="box">

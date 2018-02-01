@@ -17,7 +17,7 @@
 </section>
 <section id="hero" class="hero-bg-white">
     <div class="hero-container no-bg">
-        <div class="col-md-12 col-center text-lg-left white" style="padding-left: 80px; padding-right: 80px;">
+        <div class="col-md-8 col-sm-11 col-center text-lg-left white" >
             <div class="section-header">
                 <h3 class="about-title">Cara Kerja <em>Peer-to-Peer Lending</em></h3>
                 <div class="large-2 medium-1 small-4 columns small-centered border-green margin-bottom-20"></div>

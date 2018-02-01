@@ -9,8 +9,15 @@ and open the template in the editor.
 */
 
 .hero-bg-5 {
-    background: url(../img/bg-5.jpg);    
+    background: url(../img/bg-5.jpg);        
 }
+
+@media (max-width: 768px) {
+    .hero-bg-5 {
+        background-position: top left !important;
+    }
+}
+
 
 .hero-bg-6 {
     background: url(../img/bg-6.jpg);
