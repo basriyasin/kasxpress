@@ -108,8 +108,7 @@
             <div class="large-2 medium-1 small-4 columns small-centered border-green margin-bottom-20"></div>
         </div>
         <div class="container cicilanPinjaman">
-            <div class="table-responsive">          
-                <table class="table table-striped table">
+                <table class="table table-responsive table-striped ">
                     <thead>
                         <tr>
                             <th width="5%">No</th>
@@ -208,10 +207,6 @@
 
                 </table>
 
-            </div>
-
-
-
 
             <div class="container" style="margin:10px auto 60px">
                 <p class="text-center" style="font-size: 12px">* Semua status cicilan akan di mutahirkan pada tanggal 8 dan 23 setiap bulan, atau pada hari kerja berikutnya apabila tanggal-tanggal tersebut merupakan hari libur.</p>
@@ -253,8 +248,7 @@
         </div>
 
         <div class="container cicilanPinjaman">
-            <div class="table-responsive">          
-                <table class="table table-striped table">
+                <table class="table table-responsive table-striped">
                     <thead>
                         <tr>
                             <th width="10%">No</th>
@@ -349,7 +343,6 @@
 
                 </table>
 
-            </div>
         </div>
     </div>
 </section>

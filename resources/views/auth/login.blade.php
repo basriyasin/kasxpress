@@ -25,7 +25,7 @@
 
                                     <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                                         <label for="email" class="col-md-4 control-label">Alamat E-mail</label>
-                                        <div class="col-md-12">
+                                        <div class="col-md-10">
                                             <div class="input-group">
                                                 <span class="input-group-addon"><i class="fa fa-user"></i> </span>
                                                 <input id="email" type="email" class="form-control" placeholder="Email" name="email" value="{{ old('email') }}">
@@ -41,7 +41,7 @@
 
                                     <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                                         <label for="password" class="col-md-4 control-label">Kata Sandi</label>
-                                        <div class="col-md-12">
+                                        <div class="col-md-10">
                                             <div class="input-group">
                                                 <span class="input-group-addon"><i class="fa fa-lock"></i> </span>
                                                 <input id="password" type="password" placeholder="Password" class="form-control" name="password">
@@ -55,11 +55,12 @@
                                         </div>
                                     </div>
 
-                                    <div class="clearfix">
-                                        <div class="col-md-6 col-md-offset-4">
-                                        <button type="submit" class="btn btn-primary" style="margin-top: 0px !important;"><i class="fa fa-btn fa-sign-in"></i> Login</button>
-                                       </div>
-                                        <a href="#" class="btn-link" onclick="forgotPassword();return false;" style="float:right !important;font-size: 13px;">Lupa Password?</a>
+                                    <div class="col-md-12">
+                                         <button type="submit" class="btn btn-primary" style="margin-top: 0px !important;"><i class="fa fa-btn fa-sign-in"></i> Login</button>
+                                    </div>
+                                    <div class="col-md-12 row"><BR></div>
+                                    <div class="col-md-12">
+                                         <a href="#" class="btn-link" onclick="forgotPassword();return false;" style="font-size: 13px;">Lupa Password?</a>
                                     </div>
                                 </form>
                             </div>

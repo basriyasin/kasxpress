@@ -1305,7 +1305,7 @@ select.form-control {
 .custom-frm .box {
     background:#fff;
     border-radius: 5px;
-    padding: 30px 37px;
+    padding: 30px 20px;
     box-shadow: 0 3px 3px rgba(0,0,0,.3);
     width: 80%;
     margin: 0 auto;
@@ -1338,7 +1338,6 @@ select.form-control {
 }
 .custom-frm .btn-register {
     display: inline-block;
-    width: 50%;
     color: #fff;
     background-color: #f0ad4e;
     border-color: #eea236;
