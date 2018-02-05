@@ -107,104 +107,123 @@
             <div class="large-2 medium-1 small-4 columns small-centered border-green margin-bottom-20"></div>
         </div>
         <div class="container cicilanPinjaman">
-                <table class="table table-responsive table-striped ">
-                    <thead>
-                        <tr>
-                            <th width="5%">No</th>
-                            <th width="15%">Kode Pinjaman</th>
-                            <th width="10%">Tenor</th>
-                            <th width="20%">Pembayaran Pertama</th>
-                            <th width="50%">Periode</th>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><span>1</span></td>
-                            <td>
-                                <span>IBBT-17110238</span>
-                            </td>
-                            <td>
-                                <span>24 Bulan</span>
-                            </td>
-                            <td>
-                            </td>
-                            <td>
-                                <span>Pinjaman belum dicairkan, silahkan cek kembali beberapa saat lagi. <i>Tanggal Pendanaan -</i></span>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <td><span>2</span></td>
-                            <td>
-                                <span>IBBT-17110239</span>
-                            </td>
-                            <td>
-                                <span>3 Bulan</span>
-                            </td>
-                            <td>
-                                <span>2018-01-31</span>
-                            </td>
-                            <td>
-                                <div class="row col-md-12" style="background-color: #D3D3D3;">
-                                    <div class="text-center col"><span class="text-center">2018</span></div>
+            <table class="table table-responsive table-striped " width="100%">
+                <thead>
+                    <tr>
+                        <th width="5%">No</th>
+                        <th width="15%">Kode Pinjaman</th>
+                        <th width="10%">Tenor</th>
+                        <th width="20%">Pembayaran Pertama</th>
+                        <th width="50%">Periode</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span>1</span></td>
+                        <td>
+                            <span>IBBT-17110238</span>
+                        </td>
+                        <td>
+                            <span>24 Bulan</span>
+                        </td>
+                        <td>
+                        </td>
+                        <td class="payment-history">
+                            <span>Pinjaman belum dicairkan, silahkan cek kembali beberapa saat lagi. <i>Tanggal Pendanaan -</i></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>2</span></td>
+                        <td>
+                            <span>IBBT-17110239</span>
+                        </td>
+                        <td>
+                            <span>3 Bulan</span>
+                        </td>
+                        <td>
+                            <span>2018-01-31</span>
+                        </td>
+                        <td class="payment-history">
+                            <div class="year" style="background-color: #D3D3D3;">
+                                <div class="text-center"><span class="text-center">2018</span></div>
+                            </div>
+                            <div class="months" st1yle="background-color: #e0e0e0;">
+                                <div class="item"><span>1</span></div>
+                                <div class="item"><span>2</span></div>
+                                <div class="item"><span>3</span></div>
+                                <div class="item"><span>4</span></div>
+                                <div class="item"><span>5</span></div>
+                                <div class="item">
+                                    <span>6</span>
+                                    <i class="icon icon-green fa fa-check-circle"></i>
                                 </div>
-                                <div class="row col-md-12" style="background-color: #e0e0e0;">
-                                    <div class="col-md-1"><span>1</span></div>
-                                    <div class="col-md-1"><span>2</span></div>
-                                    <div class="col-md-1"><span>3</span></div>
-                                    <div class="col-md-1"><span>4</span></div>
-                                    <div class="col-md-1"><span>5</span></div>
-                                    <div class="col-md-1">
-                                        <span>6</span>
-                                        <div class="icon icon-green">
-                                            <i class="fa fa-check-circle"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1">
-                                        <span>7</span>
-                                        <div class="icon icon-green">
-                                            <i class="fa fa-check-circle"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1">
-                                        <span>8</span>
-                                        <div class="icon icon-green2">
-                                            <i class="fa fa-check-circle"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1">
-                                        <span>9</span>
-                                        <div class="icon icon-green2">
-                                            <i class="fa fa-check-circle"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1">
-                                        <span>10</span>
-                                        <div class="icon icon-green2">
-                                            <i class="fa fa-check-circle"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1">
-                                        <span>11</span>
-                                        <div class="icon icon-red">
-                                            <i class="fa fa-adjust"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-1">
-                                        <span>12</span>
-                                        <div class="icon">
-                                            <i class="fa fa-minus-circle"></i>
-                                        </div>
-                                    </div>
+                                <div class="item">
+                                    <span>7</span>
+                                    <i class="icon icon-green fa fa-check-circle"></i>
                                 </div>
-                            </td>
-
-                        </tr>
-
-                    </tbody>
-
-                </table>
+                                <div class="item">
+                                    <span>8</span>
+                                    <i class="icon icon-green2 fa fa-check-circle"></i>
+                                </div>
+                                <div class="item">
+                                    <span>9</span>
+                                    <i class="icon icon-green2 fa fa-check-circle"></i>
+                                </div>
+                                <div class="item">
+                                    <span>10</span>
+                                    <i class="icon icon-green2 fa fa-check-circle"></i>
+                                </div>
+                                <div class="item">
+                                    <span>11</span>
+                                    <i class="icon icon-red fa fa-adjust"></i>
+                                </div>
+                                <div class="item">
+                                    <span>12</span>
+                                    <i class="icon fa fa-minus-circle"></i>
+                                </div>
+                            </div>
+                            <div class="year" style="background-color: #D3D3D3;">
+                                <div class="text-center"><span class="text-center">2019</span></div>
+                            </div>
+                            <div class="months" st1yle="background-color: #e0e0e0;">
+                                <div class="item"><span>1</span></div>
+                                <div class="item"><span>2</span></div>
+                                <div class="item"><span>3</span></div>
+                                <div class="item"><span>4</span></div>
+                                <div class="item"><span>5</span></div>
+                                <div class="item">
+                                    <span>6</span>
+                                    <i class="icon icon-green fa fa-check-circle"></i>
+                                </div>
+                                <div class="item">
+                                    <span>7</span>
+                                    <i class="icon icon-green fa fa-check-circle"></i>
+                                </div>
+                                <div class="item">
+                                    <span>8</span>
+                                    <i class="icon icon-green2 fa fa-check-circle"></i>
+                                </div>
+                                <div class="item">
+                                    <span>9</span>
+                                    <i class="icon icon-green2 fa fa-check-circle"></i>
+                                </div>
+                                <div class="item">
+                                    <span>10</span>
+                                    <i class="icon icon-green2 fa fa-check-circle"></i>
+                                </div>
+                                <div class="item">
+                                    <span>11</span>
+                                    <i class="icon icon-red fa fa-adjust"></i>
+                                </div>
+                                <div class="item">
+                                    <span>12</span>
+                                    <i class="icon fa fa-minus-circle"></i>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
 
             <div class="container" style="margin:10px auto 60px">
@@ -247,100 +266,100 @@
         </div>
 
         <div class="container cicilanPinjaman">
-                <table class="table table-responsive table-striped">
-                    <thead>
-                        <tr>
-                            <th width="10%">No</th>
-                            <th width="10%">Kode Pinjaman</th>
-                            <th width="10%">Bung Simpel <br>(%)</th>
-                            <th width="10%">Bunga Efektif <br>(%)</th>
-                            <th width="10%">Tenur</th>
-                            <th width="10%">Pendanaan Anda <br>(Rp)</th>
-                            <th width="10%">Perkiraan Cicilan <br>(Rp)</th>
-                            <th width="10%">Realisasi Cicilan <br>(Rp)</th>
-                            <th width="10%">Status</th>
-                            <th width="10%">Factsheet</th>
-                            <th width="10%">Keterangan</th>
+            <table class="table table-responsive table-striped">
+                <thead>
+                    <tr>
+                        <th width="10%">No</th>
+                        <th width="10%">Kode Pinjaman</th>
+                        <th width="10%">Bung Simpel <br>(%)</th>
+                        <th width="10%">Bunga Efektif <br>(%)</th>
+                        <th width="10%">Tenur</th>
+                        <th width="10%">Pendanaan Anda <br>(Rp)</th>
+                        <th width="10%">Perkiraan Cicilan <br>(Rp)</th>
+                        <th width="10%">Realisasi Cicilan <br>(Rp)</th>
+                        <th width="10%">Status</th>
+                        <th width="10%">Factsheet</th>
+                        <th width="10%">Keterangan</th>
 
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><span>1</span></td>
-                            <td>
-                                <span>IBBT-17110238</span>
-                            </td>
-                            <td>
-                                <span>16,00</span>
-                            </td>
-                            <td>
-                                <span>23,90</span>
-                            </td>
-                            <td>
-                                <span>24 Bulan</span>
-                            </td>
-                            <td>
-                                <span>1.000.000,00</span>
-                            </td>
-                            <td>
-                                <span>0,00</span>
-                            </td>
-                            <td>
-                                <span>0,00</span>
-                            </td>
-                            <td>
-                                <span>FUNDING</span>
-                            </td>
-                            <td>
-                                <span><i class="fa fa-file-pdf-o"></i></span>
-                            </td>
-                            <td>
-                               
-                            </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span>1</span></td>
+                        <td>
+                            <span>IBBT-17110238</span>
+                        </td>
+                        <td>
+                            <span>16,00</span>
+                        </td>
+                        <td>
+                            <span>23,90</span>
+                        </td>
+                        <td>
+                            <span>24 Bulan</span>
+                        </td>
+                        <td>
+                            <span>1.000.000,00</span>
+                        </td>
+                        <td>
+                            <span>0,00</span>
+                        </td>
+                        <td>
+                            <span>0,00</span>
+                        </td>
+                        <td>
+                            <span>FUNDING</span>
+                        </td>
+                        <td>
+                            <span><i class="fa fa-file-pdf-o"></i></span>
+                        </td>
+                        <td>
 
-                        </tr>
-                        
-                        
-                        
-                        <tr>
-                            <td><span>2</span></td>
-                            <td>
-                                <span>IBBT-17110239</span>
-                            </td>
-                            <td>
-                                <span>16,00</span>
-                            </td>
-                            <td>
-                                <span>23,90</span>
-                            </td>
-                            <td>
-                                <span>3 Bulan</span>
-                            </td>
-                            <td>
-                                <span>1.000.000,00</span>
-                            </td>
-                            <td>
-                                <span>0,00</span>
-                            </td>
-                            <td>
-                                <span>0,00</span>
-                            </td>
-                            <td>
-                                <span>ONGOING</span>
-                            </td>
-                            <td>
-                                <span><i class="fa fa-file-pdf-o"></i></span>
-                            </td>
-                            <td>
-                               
-                            </td>
+                        </td>
 
-                        </tr>
-                        
+                    </tr>
 
-                    </tbody>
 
-                </table>
+
+                    <tr>
+                        <td><span>2</span></td>
+                        <td>
+                            <span>IBBT-17110239</span>
+                        </td>
+                        <td>
+                            <span>16,00</span>
+                        </td>
+                        <td>
+                            <span>23,90</span>
+                        </td>
+                        <td>
+                            <span>3 Bulan</span>
+                        </td>
+                        <td>
+                            <span>1.000.000,00</span>
+                        </td>
+                        <td>
+                            <span>0,00</span>
+                        </td>
+                        <td>
+                            <span>0,00</span>
+                        </td>
+                        <td>
+                            <span>ONGOING</span>
+                        </td>
+                        <td>
+                            <span><i class="fa fa-file-pdf-o"></i></span>
+                        </td>
+                        <td>
+
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+
+            </table>
 
         </div>
     </div>

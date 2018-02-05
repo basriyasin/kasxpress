@@ -195,9 +195,23 @@ div.pagination a:last-child {
     padding-left: 0px !important;
 }
 
-
-
 .tab-content {
     max-width: 100%;
     overflow-x: auto;
+}
+
+.payment-history {
+    min-width: 350px;
+}
+.payment-history .item{
+    width: 15px;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.payment-history .year, .months {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 0px;
 }
