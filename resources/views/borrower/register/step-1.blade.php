@@ -6,21 +6,20 @@
 
 @section('content')
 <section id="hero" class="hero-bg-1">
-    <div class="row height-100 margin-vertical-50 borrowerInfo">
-
-        <div class="col-md-7 col-center">
-             <div class="row margin-top-20">
-                <div class="detail-box">
-                    <div class="header">
-                        <div class="col-md-12">
-                            <h3>Apakah anda bekerja di salah satu perusahaan ini?</h3>
+    <div class="hero-container no-bg">
+        <div class="row borrowerInfo">
+            <div class="col-md-6 col-center">
+                <div class="row">
+                    <div class="detail-box">
+                        <div class="header">
+                            <div class="col-md-12">
+                                <h3>Apakah anda bekerja di salah satu perusahaan ini?</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="container">
-                        <div class="tab-content">
-                            <form autocomplete="off" method="post" action="{{ route('borrower.register.post.step-1') }}">
-                                {{ csrf_field() }}
-                                <div class="col-md-12 row">
+                        <div class="container">
+                            <div class="tab-content text-left">
+                                <form autocomplete="off" method="post" action="{{ route('borrower.register.post.step-1') }}">
+                                    {{ csrf_field() }}
                                     <div class="col-md-12">
                                         <label>Daftar Perusahaan</label>
                                         <select class="form-control" name="perusahaan" required="">
@@ -41,19 +40,15 @@
                                             <option value="notfound">Tidak ada dalam daftar.</option>
                                         </select>
                                     </div>
-                                </div>
-                                <div class="col-md-12 row hidden" id="newPerusahaan">
-                                    <div class="col-md-12">
+                                    <div class="col-md-12 hidden" id="newPerusahaan">
                                         <label>Nama Perusahaan Anda Bekerja</label>
                                         <input class="form-control" name="newPerusahaan" placeholder="Nama Perusahaan Anda Bekerja">
                                     </div>
-                                </div>
-                                <div class="col-md-12 row">
                                     <div class="col-md-12">
-                                        <input class="margin-top-20 btn btn-main" type="submit" value="Selanjutnya">    
+                                        <input class="margin-bottom-20 btn btn-main" type="submit" value="Selanjutnya">    
                                     </div>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
