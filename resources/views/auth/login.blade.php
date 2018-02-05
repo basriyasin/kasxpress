@@ -25,42 +25,46 @@
 
                                     <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                                         <label for="email" class="col-md-4 control-label">Alamat E-mail</label>
-                                        <div class="col-md-10">
+                                        <div class="col-md-12">
                                             <div class="input-group">
                                                 <span class="input-group-addon"><i class="fa fa-user"></i> </span>
                                                 <input id="email" type="email" class="form-control" placeholder="Email" name="email" value="{{ old('email') }}">
 
-                                                @if ($errors->has('email'))
-                                                <span class="help-block">
-                                                    <strong>{{ $errors->first('email') }}</strong>
-                                                </span>
-                                                @endif
                                             </div>
+                                        </div>
+
+                                        <div class="col-md-12">
+                                            @if ($errors->has('email'))
+                                            <span class="help-block" style="color: red;">
+                                                <strong>{{ $errors->first('email') }}</strong>
+                                            </span>
+                                            @endif
                                         </div>
                                     </div>
 
                                     <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                                         <label for="password" class="col-md-4 control-label">Kata Sandi</label>
-                                        <div class="col-md-10">
+                                        <div class="col-md-12">
                                             <div class="input-group">
                                                 <span class="input-group-addon"><i class="fa fa-lock"></i> </span>
                                                 <input id="password" type="password" placeholder="Password" class="form-control" name="password">
-
-                                                @if ($errors->has('password'))
-                                                <span class="help-block">
-                                                    <strong>{{ $errors->first('password') }}</strong>
-                                                </span>
-                                                @endif
                                             </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            @if ($errors->has('password'))
+                                            <span class="help-block" style="color: red;">
+                                                <strong>{{ $errors->first('password') }}</strong>
+                                            </span>
+                                            @endif
                                         </div>
                                     </div>
 
                                     <div class="col-md-12">
-                                         <button type="submit" class="btn btn-primary" style="margin-top: 0px !important;"><i class="fa fa-btn fa-sign-in"></i> Login</button>
+                                        <button type="submit" class="btn btn-primary" style="margin-top: 0px !important;"><i class="fa fa-btn fa-sign-in"></i> Login</button>
                                     </div>
                                     <div class="col-md-12 row"><BR></div>
                                     <div class="col-md-12">
-                                         <a href="#" class="btn-link" onclick="forgotPassword();return false;" style="font-size: 13px;">Lupa Password?</a>
+                                        <a href="#" class="btn-link" onclick="forgotPassword();return false;" style="font-size: 13px;">Lupa Password?</a>
                                     </div>
                                 </form>
                             </div>
@@ -70,10 +74,10 @@
                             <div class="col-md-12 text-center">
                                 <p class="text-center">Belum punya akun?</p>
                                 <a href="{{ url('/register') }}" class="btn btn-register">Daftar disini</a>
-                                
+
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>

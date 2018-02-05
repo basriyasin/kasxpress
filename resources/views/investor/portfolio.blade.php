@@ -62,7 +62,6 @@
                         <div class="nominal">
                             <p>Rp 16.000.000,00</p>
                             <p class="uppersubtext">Disbursed: Rp15.000.000,00</p>
-                            <p class="subtext">Pending: Rp1.000.000,00</p>
                         </div>
                         <div class="dest">
                             <p>Nominal Pendanaan</p>
@@ -243,7 +242,7 @@
 
         <hr class="margin-vertical-50">
         <div class="section-header col-center col-md-12">
-            <h3 class="about-title">Cicilan Pinjaman</h3>
+            <h3 class="about-title">Detail Pinjaman</h3>
             <div class="large-2 medium-1 small-4 columns small-centered border-green margin-bottom-20"></div>
         </div>
 
