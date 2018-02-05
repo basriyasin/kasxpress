@@ -138,10 +138,72 @@
                             <span>IBBT-17110239</span>
                         </td>
                         <td>
-                            <span>3 Bulan</span>
+                            <span>6 Bulan</span>
                         </td>
                         <td>
-                            <span>2018-01-31</span>
+                            <span>2018-02-01</span>
+                        </td>
+                        <td class="payment-history">
+                            <div class="year" style="background-color: #D3D3D3;">
+                                <div class="text-center"><span class="text-center">2018</span></div>
+                            </div>
+                            <div class="months" st1yle="background-color: #e0e0e0;">
+                                <div class="item">
+                                    <span>1</span>
+                                </div>
+                                <div class="item">
+                                    <span>2</span>
+                                    <i class="icon icon-green fa fa-check-circle"></i>
+                                </div>
+                                <div class="item">
+                                    <span>3</span>
+                                    <i class="icon icon-green fa fa-check-circle"></i>
+                                </div>
+                                <div class="item">
+                                    <span>4</span>
+                                    <i class="icon icon-green2 fa fa-check-circle"></i>
+                                </div>
+                                <div class="item">
+                                    <span>5</span>
+                                    <i class="icon icon-green2 fa fa-check-circle"></i>
+                                </div>
+                                <div class="item">
+                                    <span>6</span>
+                                    <i class="icon icon-green2 fa fa-check-circle"></i>
+                                </div>
+                                <div class="item">
+                                    <span>7</span>
+                                    <i class="icon icon-red fa fa-adjust"></i>
+                                </div>
+                                <div class="item">
+                                    <span>8</span>
+                                    <i class="icon icon-green fa fa-check-circle"></i>
+                                </div>
+                                <div class="item">
+                                    <span>9</span>
+                                </div>
+                                <div class="item">
+                                    <span>10</span>
+                                </div>
+                                <div class="item">
+                                    <span>11</span>
+                                </div>
+                                <div class="item">
+                                    <span>12</span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>3</span></td>
+                        <td>
+                            <span>IBBT-17110239</span>
+                        </td>
+                        <td>
+                            <span>12 Bulan</span>
+                        </td>
+                        <td>
+                            <span>2018-06-15</span>
                         </td>
                         <td class="payment-history">
                             <div class="year" style="background-color: #D3D3D3;">
@@ -179,45 +241,53 @@
                                 </div>
                                 <div class="item">
                                     <span>12</span>
-                                    <i class="icon fa fa-minus-circle"></i>
+                                    <i class="icon icon-green2 fa fa-check-circle"></i>
                                 </div>
                             </div>
                             <div class="year" style="background-color: #D3D3D3;">
                                 <div class="text-center"><span class="text-center">2019</span></div>
                             </div>
                             <div class="months" st1yle="background-color: #e0e0e0;">
-                                <div class="item"><span>1</span></div>
-                                <div class="item"><span>2</span></div>
-                                <div class="item"><span>3</span></div>
-                                <div class="item"><span>4</span></div>
-                                <div class="item"><span>5</span></div>
                                 <div class="item">
-                                    <span>6</span>
+                                    <span>1</span>
                                     <i class="icon icon-green fa fa-check-circle"></i>
                                 </div>
                                 <div class="item">
-                                    <span>7</span>
+                                    <span>2</span>
                                     <i class="icon icon-green fa fa-check-circle"></i>
                                 </div>
                                 <div class="item">
-                                    <span>8</span>
+                                    <span>3</span>
                                     <i class="icon icon-green2 fa fa-check-circle"></i>
                                 </div>
                                 <div class="item">
-                                    <span>9</span>
-                                    <i class="icon icon-green2 fa fa-check-circle"></i>
-                                </div>
-                                <div class="item">
-                                    <span>10</span>
-                                    <i class="icon icon-green2 fa fa-check-circle"></i>
-                                </div>
-                                <div class="item">
-                                    <span>11</span>
+                                    <span>4</span>
                                     <i class="icon icon-red fa fa-adjust"></i>
                                 </div>
                                 <div class="item">
-                                    <span>12</span>
+                                    <span>5</span>
                                     <i class="icon fa fa-minus-circle"></i>
+                                </div>
+                                <div class="item">
+                                    <span>6</span>
+                                </div>
+                                <div class="item">
+                                    <span>7</span>
+                                </div>
+                                <div class="item">
+                                    <span>8</span>
+                                </div>
+                                <div class="item">
+                                    <span>9</span>
+                                </div>
+                                <div class="item">
+                                    <span>10</span>
+                                </div>
+                                <div class="item">
+                                    <span>11</span>
+                                </div>
+                                <div class="item">
+                                    <span>12</span>
                                 </div>
                             </div>
                         </td>
