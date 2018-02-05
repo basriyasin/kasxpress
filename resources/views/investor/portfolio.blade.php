@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<section id="hero" class="hero-bg-2 text-black padding-bottom-50">
+<section id="heroV2" class="hero-bg-2 text-black padding-bottom-50">
     <div class="hero-container no-bg">
         <div class="section-header col-center col-md-12">
             <h3 class="about-title">Pinjaman Portfolio</h3>
