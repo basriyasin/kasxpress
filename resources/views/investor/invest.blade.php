@@ -7,366 +7,372 @@
 @section('content')
 <section id="heroV2" class="hero-bg-2 text-black padding-bottom-50">
     <div class="hero-container no-bg">
-        <div class="row col-md-12">
-            <div class="section-header col-center col-md-12">
-                <h3 class="section-title" id="nav-section-title">Cari Peminjam</h3>
-            </div>
-
-
-            <!-----------------------------
-            Transaction Tab
-        ------------------------------>
-            <div class="row col-md-11 col-center">
-                <ul class="nav nav-tabs col-center">
-                    <li class="active"><a href="#market" data-toggle="tab" title="Cari Peminjam">Peminjam</a></li>
-                    <li class=""><a href="#checkout" data-toggle="tab" title="Checkout Pendanaan">Checkout</a></li>
-                    <li class=""><a href="#history" data-toggle="tab" title="Riwayat Pendanaan">Riwayat</a></li>
-                </ul>
-                <div class="tab-content" >
-
-                    <!-----------------------------
-                    Market Tab
-                ------------------------------>
-                    <div id="market" class="tab-pane fade in active">
-                        <div class="table-responsive">          
-                            <table class="table table-striped table">
-                                <thead style="vertical-align: middle">
-                                    <tr>
-                                        <th width="1%">No</th>
-                                        <th width="20%">Jumlah Pendanaan</th>
-                                        <th width="5%">Tanggal Publikasi</th>
-                                        <th width="3%">Rating</th>
-                                        <th width="10%">Bunga Efektif & Simpel</th>
-                                        <th width="13%">Pinjaman</th>
-                                        <th width="3%">Tenor</th>
-                                        <th width="10%">Progress</th>
-                                        <th width="20%">Jumlah & Waktu Tersisa</th>
-                                        <th width="15%">Perusahaan</th>
-                                        <th width="8%">Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>
-                                            <input name="pendanaan" placeholder="Rp. 0,00"><br>
-                                            <span class="text-sm-left text-muted">Min. Rp. 1.000.000,00</span>
-                                        </td>
-                                        <td>
-                                            <div class="publication-date">
-                                                <span class="month">Jan</span>
-                                                <span class="day">12</span>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <span class="rating">AA</span>
-                                        </td>
-                                        <td>12.5%<br>15.5%</td>
-                                        <td>Rp. 2.500.000,00</td>
-                                        <td>24 bulan</td>
-                                        <td> 
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                                                     aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                                                    80%
-                                                </div>
-                                            </div> 
-                                        </td>
-                                        <td>
-                                            Rp. 1.000.000,00<br>
-                                            3 hari
-                                        </td>
-                                        <td>PT. XYZ</td>
-                                        <td>Funding</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>
-                                            <input name="pendanaan" placeholder="Rp. 0,00"><br>
-                                            <span class="text-muted">Min. Rp. 1.000.000,00</span>
-                                        </td>
-                                        <td>
-                                            <div class="publication-date">
-                                                <span class="month">Jan</span>
-                                                <span class="day">16</span>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <span class="rating">A</span>
-                                        </td>
-                                        <td>12.5%<br>15.5%</td>
-                                        <td>Rp. 3.000.000,00</td>
-                                        <td>24 bulan</td>
-                                        <td> 
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                                                     aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                                                    50%
-                                                </div>
-                                            </div> 
-                                        </td>
-                                        <td>
-                                            Rp. 1.500.000,00<br>
-                                            7 hari
-                                        </td>
-                                        <td>PT. Lalala</td>
-                                        <td>Funding</td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <td colspan="11" align="center">
-                                            <div class="pagination col-center col-md-1">
-                                                <a class="active" href="#">1</a>
-                                                <a href="#">2</a>
-                                                <a href="#">3</a>
-                                                <a href="#">4</a>
-                                                <a href="#">5</a>
-                                                <a href="#">6</a>
-                                                <a href="#">7</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                            <div class="col-md-12 row">
-                                <div class="col-md-12">
-                                    <input type="submit" class="float-right col-md-1 btn btn-main" value="Checkout">&nbsp;
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-----------------------------
-                    End of Market Tab
-                ------------------------------>
-
-
-
-                    <!-----------------------------
-                    Checkout Tab
-                ------------------------------>
-                    <div id="checkout" class="tab-pane fade in">
-                        <div class="table-responsive">          
-                            <table class="table table-striped table">
-                                <thead style="vertical-align: middle">
-                                    <tr>
-                                        <th width="1%">No</th>
-                                        <th width="20%">Jumlah Pendanaan</th>
-                                        <th width="5%">Tanggal Publikasi</th>
-                                        <th width="3%">Rating</th>
-                                        <th width="10%">Bunga Efektif & Simpel</th>
-                                        <th width="13%">Pinjaman</th>
-                                        <th width="3%">Tenor</th>
-                                        <th width="10%">Progress</th>
-                                        <th width="20%">Jumlah & Waktu Tersisa</th>
-                                        <th width="15%">Perusahaan</th>
-                                        <th width="8%">Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td align="left">
-                                            Rp. 1.000.000,00
-                                        </td>
-                                        <td>
-                                            <div class="publication-date">
-                                                <span class="month">Jan</span>
-                                                <span class="day">12</span>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <span class="rating">AA</span>
-                                        </td>
-                                        <td>12.5%<br>15.5%</td>
-                                        <td>Rp. 2.500.000,00</td>
-                                        <td>24 bulan</td>
-                                        <td> 
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                                                     aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                                                    80%
-                                                </div>
-                                            </div> 
-                                        </td>
-                                        <td>
-                                            Rp. 1.000.000,00<br>
-                                            3 hari
-                                        </td>
-                                        <td>PT. XYZ</td>
-                                        <td>Funding</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td align="left">
-                                            Rp. 1.250.000,00
-                                        </td>
-                                        <td>
-                                            <div class="publication-date">
-                                                <span class="month">Jan</span>
-                                                <span class="day">16</span>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <span class="rating">A</span>
-                                        </td>
-                                        <td>12.5%<br>15.5%</td>
-                                        <td>Rp. 3.000.000,00</td>
-                                        <td>24 bulan</td>
-                                        <td> 
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                                                     aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                                                    50%
-                                                </div>
-                                            </div> 
-                                        </td>
-                                        <td>
-                                            Rp. 1.500.000,00<br>
-                                            7 hari
-                                        </td>
-                                        <td>PT. Lalala</td>
-                                        <td>Funding</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="col-md-12 row">
-                                <div class="col-md-12">
-                                    <p class="text-left text-muted">
-                                        <span class="text-danger">*</span>
-                                        Semua bentuk pendanaan memiliki resiko, 
-                                        termasuk resiko kehilangan jumlah dana yang diberikan. 
-                                        Kegiatan pendanaan belum tentu sesuai untuk semua orang.
-                                    </p>
-                                </div>
-                                <div class="col-md-12">
-                                    <input type="submit" class="float-right col-md-1 btn btn-main" value="Konfirmasi">&nbsp;
-                                    <input type="submit" class="float-right col-md-1 btn margin-right-20" id="back" value="Kembali">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-----------------------------
-                    End of Checkout Tab
-                    ------------------------------>
-
-
-
-                    <!-----------------------------
-                    History Tab
-                ------------------------------>
-                    <div id="history" class="tab-pane fade in">
-                        <div class="table-responsive">          
-                            <table class="table table-striped table">
-                                <thead style="vertical-align: middle">
-                                    <tr>
-                                        <th width="1%">No</th>
-                                        <th width="20%">Jumlah Pendanaan</th>
-                                        <th width="5%">Tanggal Publikasi</th>
-                                        <th width="3%">Rating</th>
-                                        <th width="10%">Bunga Efektif & Simpel</th>
-                                        <th width="13%">Pinjaman</th>
-                                        <th width="3%">Tenor</th>
-                                        <th width="10%">Progress</th>
-                                        <th width="20%">Jumlah & Waktu Tersisa</th>
-                                        <th width="15%">Perusahaan</th>
-                                        <th width="8%">Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td align="left">
-                                            Rp. 1.000.000,00
-                                        </td>
-                                        <td>
-                                            <div class="publication-date">
-                                                <span class="month">Jan</span>
-                                                <span class="day">12</span>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <span class="rating">AA</span>
-                                        </td>
-                                        <td>12.5%<br>15.5%</td>
-                                        <td>Rp. 2.500.000,00</td>
-                                        <td>24 bulan</td>
-                                        <td> 
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                                                     aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                                                    80%
-                                                </div>
-                                            </div> 
-                                        </td>
-                                        <td>
-                                            Rp. 1.000.000,00<br>
-                                            3 hari
-                                        </td>
-                                        <td>PT. XYZ</td>
-                                        <td>Funding</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td align="left">
-                                            Rp. 1.000.000,00
-                                        </td>
-                                        <td>
-                                            <div class="publication-date">
-                                                <span class="month">Jan</span>
-                                                <span class="day">16</span>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <span class="rating">A</span>
-                                        </td>
-                                        <td>12.5%<br>15.5%</td>
-                                        <td>Rp. 3.000.000,00</td>
-                                        <td>24 bulan</td>
-                                        <td> 
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                                                     aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                                                    50%
-                                                </div>
-                                            </div> 
-                                        </td>
-                                        <td>
-                                            Rp. 1.500.000,00<br>
-                                            7 hari
-                                        </td>
-                                        <td>PT. Lalala</td>
-                                        <td>Funding</td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <td colspan="11" align="center">
-                                            <div class="pagination col-center col-md-1">
-                                                <a class="active" href="#">1</a>
-                                                <a href="#">2</a>
-                                                <a href="#">3</a>
-                                                <a href="#">4</a>
-                                                <a href="#">5</a>
-                                                <a href="#">6</a>
-                                                <a href="#">7</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                        </div>
-                    </div>
-                    <!-----------------------------
-                    End of History Tab
-                ------------------------------>
-
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-header col-center col-md-12">
+                    <h3 class="section-title" id="nav-section-title">Cari Peminjam</h3>
                 </div>
-            </div>
-            <!-----------------------------
-            End of Transaction Tab
-        ------------------------------>
 
+
+                <!-----------------------------
+                Transaction Tab
+            ------------------------------>
+                <div class="row col-md-11 col-center">
+                    <div class="col-center">
+                        <ul class="nav nav-tabs col-center">
+                            <li class="active"><a href="#market" data-toggle="tab" title="Cari Peminjam">Peminjam</a></li>
+                            <li class=""><a href="#checkout" data-toggle="tab" title="Checkout Pendanaan">Checkout</a></li>
+                            <li class=""><a href="#history" data-toggle="tab" title="Riwayat Pendanaan">Riwayat</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="tab-content">
+
+                            <!-----------------------------
+                            Market Tab
+                        ------------------------------>
+                            <div id="market" class="tab-pane fade in active">
+                                <div class="table-responsive">          
+                                    <table class="table table-striped table">
+                                        <thead style="vertical-align: middle">
+                                            <tr>
+                                                <th width="1%">No</th>
+                                                <th width="20%">Jumlah Pendanaan</th>
+                                                <th width="5%">Tanggal Publikasi</th>
+                                                <th width="3%">Rating</th>
+                                                <th width="10%">Bunga Efektif & Simpel</th>
+                                                <th width="13%">Pinjaman</th>
+                                                <th width="3%">Tenor</th>
+                                                <th width="10%">Progress</th>
+                                                <th width="20%">Jumlah & Waktu Tersisa</th>
+                                                <th width="15%">Perusahaan</th>
+                                                <th width="8%">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <input name="pendanaan" placeholder="Rp. 0,00"><br>
+                                                    <span class="text-sm-left text-muted">Min. Rp. 1.000.000,00</span>
+                                                </td>
+                                                <td>
+                                                    <div class="publication-date">
+                                                        <span class="month">Jan</span>
+                                                        <span class="day">12</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class="rating">AA</span>
+                                                </td>
+                                                <td>12.5%<br>15.5%</td>
+                                                <td>Rp. 2.500.000,00</td>
+                                                <td>24 bulan</td>
+                                                <td> 
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                             aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                                            80%
+                                                        </div>
+                                                    </div> 
+                                                </td>
+                                                <td>
+                                                    Rp. 1.000.000,00<br>
+                                                    3 hari
+                                                </td>
+                                                <td>PT. XYZ</td>
+                                                <td>Funding</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>
+                                                    <input name="pendanaan" placeholder="Rp. 0,00"><br>
+                                                    <span class="text-muted">Min. Rp. 1.000.000,00</span>
+                                                </td>
+                                                <td>
+                                                    <div class="publication-date">
+                                                        <span class="month">Jan</span>
+                                                        <span class="day">16</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class="rating">A</span>
+                                                </td>
+                                                <td>12.5%<br>15.5%</td>
+                                                <td>Rp. 3.000.000,00</td>
+                                                <td>24 bulan</td>
+                                                <td> 
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                             aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                                                            50%
+                                                        </div>
+                                                    </div> 
+                                                </td>
+                                                <td>
+                                                    Rp. 1.500.000,00<br>
+                                                    7 hari
+                                                </td>
+                                                <td>PT. Lalala</td>
+                                                <td>Funding</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="11" align="center">
+                                                    <div class="pagination col-center col-md-1">
+                                                        <a class="active" href="#">1</a>
+                                                        <a href="#">2</a>
+                                                        <a href="#">3</a>
+                                                        <a href="#">4</a>
+                                                        <a href="#">5</a>
+                                                        <a href="#">6</a>
+                                                        <a href="#">7</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-12">
+                                            <input type="submit" class="float-right col-md-1 btn btn-main" value="Checkout">&nbsp;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-----------------------------
+                            End of Market Tab
+                        ------------------------------>
+
+
+
+                            <!-----------------------------
+                            Checkout Tab
+                        ------------------------------>
+                            <div id="checkout" class="tab-pane fade in">
+                                <div class="table-responsive">          
+                                    <table class="table table-striped table">
+                                        <thead style="vertical-align: middle">
+                                            <tr>
+                                                <th width="1%">No</th>
+                                                <th width="20%">Jumlah Pendanaan</th>
+                                                <th width="5%">Tanggal Publikasi</th>
+                                                <th width="3%">Rating</th>
+                                                <th width="10%">Bunga Efektif & Simpel</th>
+                                                <th width="13%">Pinjaman</th>
+                                                <th width="3%">Tenor</th>
+                                                <th width="10%">Progress</th>
+                                                <th width="20%">Jumlah & Waktu Tersisa</th>
+                                                <th width="15%">Perusahaan</th>
+                                                <th width="8%">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td align="left">
+                                                    Rp. 1.000.000,00
+                                                </td>
+                                                <td>
+                                                    <div class="publication-date">
+                                                        <span class="month">Jan</span>
+                                                        <span class="day">12</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class="rating">AA</span>
+                                                </td>
+                                                <td>12.5%<br>15.5%</td>
+                                                <td>Rp. 2.500.000,00</td>
+                                                <td>24 bulan</td>
+                                                <td> 
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                             aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                                            80%
+                                                        </div>
+                                                    </div> 
+                                                </td>
+                                                <td>
+                                                    Rp. 1.000.000,00<br>
+                                                    3 hari
+                                                </td>
+                                                <td>PT. XYZ</td>
+                                                <td>Funding</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td align="left">
+                                                    Rp. 1.250.000,00
+                                                </td>
+                                                <td>
+                                                    <div class="publication-date">
+                                                        <span class="month">Jan</span>
+                                                        <span class="day">16</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class="rating">A</span>
+                                                </td>
+                                                <td>12.5%<br>15.5%</td>
+                                                <td>Rp. 3.000.000,00</td>
+                                                <td>24 bulan</td>
+                                                <td> 
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                             aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                                                            50%
+                                                        </div>
+                                                    </div> 
+                                                </td>
+                                                <td>
+                                                    Rp. 1.500.000,00<br>
+                                                    7 hari
+                                                </td>
+                                                <td>PT. Lalala</td>
+                                                <td>Funding</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="col-md-12 row">
+                                        <div class="col-md-12">
+                                            <p class="text-left text-muted">
+                                                <span class="text-danger">*</span>
+                                                Semua bentuk pendanaan memiliki resiko, 
+                                                termasuk resiko kehilangan jumlah dana yang diberikan. 
+                                                Kegiatan pendanaan belum tentu sesuai untuk semua orang.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="submit" class="float-right col-md-1 btn btn-main" value="Konfirmasi">&nbsp;
+                                            <input type="submit" class="float-right col-md-1 btn margin-right-20" id="back" value="Kembali">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-----------------------------
+                            End of Checkout Tab
+                            ------------------------------>
+
+
+
+                            <!-----------------------------
+                            History Tab
+                        ------------------------------>
+                            <div id="history" class="tab-pane fade in">
+                                <div class="table-responsive">          
+                                    <table class="table table-striped table">
+                                        <thead style="vertical-align: middle">
+                                            <tr>
+                                                <th width="1%">No</th>
+                                                <th width="20%">Jumlah Pendanaan</th>
+                                                <th width="5%">Tanggal Publikasi</th>
+                                                <th width="3%">Rating</th>
+                                                <th width="10%">Bunga Efektif & Simpel</th>
+                                                <th width="13%">Pinjaman</th>
+                                                <th width="3%">Tenor</th>
+                                                <th width="10%">Progress</th>
+                                                <th width="20%">Jumlah & Waktu Tersisa</th>
+                                                <th width="15%">Perusahaan</th>
+                                                <th width="8%">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td align="left">
+                                                    Rp. 1.000.000,00
+                                                </td>
+                                                <td>
+                                                    <div class="publication-date">
+                                                        <span class="month">Jan</span>
+                                                        <span class="day">12</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class="rating">AA</span>
+                                                </td>
+                                                <td>12.5%<br>15.5%</td>
+                                                <td>Rp. 2.500.000,00</td>
+                                                <td>24 bulan</td>
+                                                <td> 
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                             aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                                            80%
+                                                        </div>
+                                                    </div> 
+                                                </td>
+                                                <td>
+                                                    Rp. 1.000.000,00<br>
+                                                    3 hari
+                                                </td>
+                                                <td>PT. XYZ</td>
+                                                <td>Funding</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td align="left">
+                                                    Rp. 1.000.000,00
+                                                </td>
+                                                <td>
+                                                    <div class="publication-date">
+                                                        <span class="month">Jan</span>
+                                                        <span class="day">16</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class="rating">A</span>
+                                                </td>
+                                                <td>12.5%<br>15.5%</td>
+                                                <td>Rp. 3.000.000,00</td>
+                                                <td>24 bulan</td>
+                                                <td> 
+                                                    <div class="progress">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                             aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                                                            50%
+                                                        </div>
+                                                    </div> 
+                                                </td>
+                                                <td>
+                                                    Rp. 1.500.000,00<br>
+                                                    7 hari
+                                                </td>
+                                                <td>PT. Lalala</td>
+                                                <td>Funding</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="11" align="center">
+                                                    <div class="pagination col-center col-md-1">
+                                                        <a class="active" href="#">1</a>
+                                                        <a href="#">2</a>
+                                                        <a href="#">3</a>
+                                                        <a href="#">4</a>
+                                                        <a href="#">5</a>
+                                                        <a href="#">6</a>
+                                                        <a href="#">7</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-----------------------------
+                            End of History Tab
+                        ------------------------------>
+
+                        </div>
+                    </div>
+                </div>
+                <!-----------------------------
+                End of Transaction Tab
+            ------------------------------>
+
+            </div>
         </div>
 
         <hr class="margin-vertical-50">

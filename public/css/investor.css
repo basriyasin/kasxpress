@@ -197,57 +197,7 @@ div.pagination a:last-child {
 
 
 
-/**
-    Custom table responsive 
-    --- NORMAl ---
-*/
-.list-responsive {
-    width: auto;
-    margin: 0px auto;
-}
-
-.list-responsive .item .detail > li {
-    padding: 3px 1em;
-    display: table-cell;
-    vertical-align: middle;
-    list-style: none;
-    widht: 300px;
-}
-
-.list-responsive .item .detail > li .progress {
-    min-width: 100px;    
-}
-
-.list-responsive .item .detail > li.publication-date {
-    padding: 10px;
-    border-bottom: none;
-    min-width: 60px;
-    font-size: 2vh;
-}
-
-.list-responsive .item .detail > li.publication-date span:nth-child(2) {
-     border-bottom: 3px solid #2dca98;
-}
-
-.list-responsive .item .detail > li.company-name {
-     width: 300px;
-     max-height: 100px;
-    font-size: 16px; 
-    font-size: 1rem;
-}
-
-/**
-    Custom table responsive 
-    --- Medium ---
-*/
-@media (max-width: 768px) {
-    .list-responsive .item .detail > li {
-        display: block;
-        width: 100%;
-        padding: 10px;
-    }
-    .list-responsive .item .detail > li:nth-child(even) {
-        background: #eee;
-    }
-
+.tab-content {
+    max-width: 100%;
+    overflow-x: auto;
 }
