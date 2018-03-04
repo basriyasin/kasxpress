@@ -30,7 +30,7 @@
                     dengan menghubungkan Karyawan berpotensi dan pemberi pinjaman. Pendekatan KasXpress telah menciptakan suku 
                     bunga kompetitif bagi Karyawan peminjam dan alternatif investasi yang aman dan menarik bagi pemberi pinjaman.
                     <br>
-                    <a href="https://kasxpress.com">Kasxpress.com</a> adalah platform web yang digunakan KasXpress untuk menawarkan semua pinjaman yang tersedia pada Anda, calon investor. 
+                    <a href="https://kasxpress.com">KasXpress.com</a> adalah platform web yang digunakan KasXpress untuk menawarkan semua pinjaman yang tersedia pada Anda, calon investor. 
                     Anda dapat menghasilkan keuntungan hingga 16% setiap tahunnya dengan pokok pinjaman yang dijamin sampai dengan 100% oleh mitra KasXpress, para Lending Partners.
                     </p>
                     <div class="blue_divider"></div>
@@ -40,7 +40,7 @@
                     </div>
                     <p class="text-center">
                         Sebagai sebuah tim, kami berkomitmen untuk membantu sesama bisnis mencapai potensi terbesar mereka 
-                        sementara memungkinkan kreditur untuk mendapatkan hasil yang baik dan memberikan kontribusi kepada masyarakat.
+                        sementara memungkinkan pemberi pinjaman untuk mendapatkan hasil yang baik dan memberikan kontribusi kepada masyarakat.
                         
                     </p>
                 </div>

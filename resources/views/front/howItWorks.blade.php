@@ -9,7 +9,7 @@
     <div class="portfolio-container caption row">
         <div class="col-md-8 text-lg-left text-white">
             <h1>Cara Cerdas Meminjam dan Mendanai</h1>
-            <p>Lebih fleksibel, aman, dan nyaman mengajukan aplikasi pinjaman serta melakukan pendanaan 
+            <p>Lebih fleksibel, aman dan nyaman mengajukan aplikasi pinjaman serta melakukan pendanaan 
                 melalui <em>peer-to-peer lending.</em></p>
 
         </div>
@@ -26,13 +26,17 @@
                 <img class="col-lg-4 col-md-6 col-sm-12" src="{{ asset('img/how_it_works.png') }}">
             </div>
             <p class="text-justify">
-                Familiar dengan situasi ini? — Seorang teman ingin meminjam kepada Anda tapi segan. Ia lalu memutuskan meminta bantuan kepada bank namun terkendala persyaratan yang rumit. 
+                Familiar dengan situasi ini? — Seorang teman ingin meminjam kepada Anda tapi segan. 
+                Ia lalu memutuskan meminta bantuan kepada bank namun terkendala persyaratan yang rumit. 
                 Di sisi lain, Anda memiliki dana berlebih tapi enggan meminjamkan karena merasa waswas. 
-                Peer-to-peer lending (P2PL) ada untuk memecahkan masalah tersebut. 
-                Tanpa perantara bank atau lembaga finansial lainnya, P2PL merupakan praktik meminjam dan memberikan pinjaman secara online melalui sebuah wadah yang disebut marketplace.
+                <i>Peer-to-peer lending</i> (P2PL) ada untuk memecahkan masalah tersebut. Tanpa perantara bank 
+                atau lembaga finansial lainnya, P2PL merupakan praktik meminjam dan memberikan pinjaman 
+                secara online melalui sebuah wadah yang disebut marketplace.
                 <br><br>
-                Mengajukan pinjaman atau mendanai dengan orang lain yang bukan teman menjadi poin penting dari keberadaan kami. 
-                KasXpress akan membantu mengamankan hubungan antara Borrower dan Lender sehingga keduanya dapat sama-sama menikmati keuntungan; pinjaman berbunga kompetitif untuk Borrower dan return terbaik untuk Lender.
+                Mengajukan pinjaman atau mendanai dengan orang lain yang bukan teman menjadi poin penting 
+                dari keberadaan kami. KasXpress akan membantu mengamankan hubungan antara peminjam dan 
+                pemberi pinjaman sehingga keduanya dapat sama-sama menikmati keuntungan, pinjaman berbunga 
+                kompetitif untuk peminjam dan bunga terbaik untuk pemberi pinjaman.
             </p>
 
             <div class="blue_divider"></div>
@@ -45,14 +49,14 @@
                     <div class="col-lg-6 col-md-6 wow fadeInLeftBig" data-wow-delay="0.8s">
                         <div class="box" style="height: 100%">
                             <div class="icon"><a href=""><i class="fa fa-users"></i></a></div>
-                            <h4 class="title"><a href="">Borrower</a></h4>
+                            <h4 class="title"><a href="">Peminjam</a></h4>
                             <div class="col-md-12">
                                 <div class="col-md-3 pull-left">
                                     <a href=""><i class="fa fa-wpforms fa-3x" aria-hidden="true"></i></a>
                                 </div>
                                 <div class="col-md-9 columns">
                                     <p style="font-weight: bold; margin-bottom: 0;">1. Mengajukan Pinjaman</p>
-                                    <p style="font-size: 14px;">Borrower melengkapi informasi yang dibutuhkan pada aplikasi pinjaman.</p>
+                                    <p style="font-size: 14px;">Peminjam melengkapi informasi yang dibutuhkan pada aplikasi pinjaman.</p>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -70,7 +74,7 @@
                                 </div>
                                 <div class="col-md-9 columns">
                                     <p style="font-weight: bold; margin-bottom: 0;">3. Membayar pinjaman</p>
-                                    <p style="font-size: 14px;">Borrower membayar pinjaman melalui Investree sesuai dengan jadwal yang telah ditentukan.</p>
+                                    <p style="font-size: 14px;">Peminjam membayar pinjaman melalui Investree sesuai dengan jadwal yang telah ditentukan.</p>
                                 </div>
                             </div>
 
@@ -87,7 +91,7 @@
                                 </div>
                                 <div class="col-md-9 columns">
                                     <p style="font-weight: bold; margin-bottom: 0;">1. Menelusuri marketplace</p>
-                                    <p style="font-size: 14px;">Pendana menganalisis pinjaman berdasarkan informasi yang tertera di fact sheet.</p>
+                                    <p style="font-size: 14px;">Pendana menganalisis pinjaman berdasarkan informasi yang tertera di <i>fact sheet.</i></p>
                                 </div>
                             </div>
                             <div class="col-md-12">

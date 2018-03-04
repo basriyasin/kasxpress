@@ -19,7 +19,7 @@
                     <h3 class="title m-bottom-20 f-24">Ingin uang Anda bermanfaat?</h3>
                     <h5 class="title f-18 m-bottom-0">Dapatkan return sampai dengan</h5>
                     <p class="title f-18 black m-bottom-0"><span class="f-40 blue">20%</span> p.a. dari pokok pinjaman</p>
-                    <small class="f-13 grey block m-bottom-20">*sampai dengan 6 bulan pendanaan, pre tax, asumsi pendanaan dan tidak ada penarikan dini.</small>
+                    <small class="f-13 grey block m-bottom-20">*sampai dengan 6 bulan pendanaan, <i>pre-tax</i>, asumsi pendanaan dan tidak ada penarikan dini.</small>
                     <button class="btn btn-blue" onclick="showModal('investor')">Berikan Pinjaman</button>
                 </div>
 

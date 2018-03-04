@@ -91,7 +91,7 @@
     <div class="section-container col-md-12 wow fadeInUp">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="text-center">Silumasi Pinjaman</h3>
+                <h3 class="text-center">Simulasi Pinjaman</h3>
             </div>
             <div class="col-md-4 col-center">
                 <form autocomplete="off" class="">

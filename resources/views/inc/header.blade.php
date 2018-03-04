@@ -32,7 +32,8 @@
                     <ul>
                         @foreach(config('app.supported_locale') as $v)
                         <li>
-                            <a href="{{ route('menu.setLang', $v) }}">
+                            <!--<a href="{{ route('menu.setLang', $v) }}">-->
+                            <a href="#">
                                 <img class="lang-menu" src="{{ asset('img/flag/').'/'.$v.'.png' }}" /> {{ strtoupper($v) }}
                             </a>
                         </li>

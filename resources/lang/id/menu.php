@@ -1,7 +1,7 @@
 <?php
 return [
     'front' => [
-        'home'              => 'HOME',
+        'home'              => 'Pendanaan',
         'pinjaman_karyawan' => 'Pinjaman Karyawan',
         'pendanaan'         => 'Pendanaan',
         'cara_kerja'        => 'Cara Kerja',
