@@ -90,7 +90,7 @@
                     <h3 class="section-title">KasXpress?</h3>
                 </div>
                 <p class="text-justify">
-                    KasXpress adalah pionir layanan peer-to-peer lending berbasis teknologi finansial di Indonesia. 
+                    KasXpress adalah perusahaan swasta peer to peer lending yang berbasis teknologi finansial di Indonesia. 
                     Kami mendukung pertumbuhan bisnis lokal dan membentuk dunia keuangan yang lebih inklusif dan inovatif 
                     dengan menghubungkan Karyawan berpotensi dan pemberi pinjaman. Pendekatan KasXpress telah menciptakan suku 
                     bunga kompetitif bagi Karyawan peminjam dan alternatif investasi yang aman dan menarik bagi pemberi pinjaman.

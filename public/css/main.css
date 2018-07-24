@@ -1254,7 +1254,7 @@ select.form-control {
 
 .img-circle-about {
     width: 200px;
-    height: 100%;
+    /*height: 100%;*/
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;

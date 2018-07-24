@@ -112,15 +112,54 @@
                                     <p style="font-size: 14px;">Pendana menerima pengembalian pinjaman beserta bunga yang dapat didanai kembali pada tawaran pinjaman lainnya.</p>
                                 </div>
                             </div>
-
-                        </div>
+                        </div>                        
                     </div>
+                    
                 </div>
             </div>
-
+            
+            
+            <div class="section-header">
+                <h3 class="about-title">Definisi Risiko Pendanaan</h3>
+                <div class="large-2 medium-1 small-4 columns small-centered border-green margin-bottom-20"></div>
+            </div>
+            <p class="text-justify">
+                Adalah kemungkinan terjadinya kerugian terhadap pendanaan yang dilakukan oleh <i>Pemberi
+                Pinjaman</i>. Untuk itu, <i>Pemberi Pinjaman</i> dianjurkan untuk mempertimbangkan berbagai
+                macam risiko yang diprediksi bisa terjadi sebelum memberikan pinjaman melalui <i>platform</i>
+                KasXpress.
+                <br><br>
+                Walaupun kami KasXpress memiliki sistem <i>credit-scoring</i> yang akurat, dan hanya akan
+                memberikan pinjaman kepada perorangan yang memiliki tingkat kelayakan kredit yang baik,
+                namun risiko yang terkandung pada pendanaan tidak dapat sepenuhnya dihindarkan.
+                <br><br>
+                Dalam setiap kegiatan pendanaan, <i>Pemberi Pinjaman</i> selalu memiliki potensi kehilangan seluruh
+                pendanaannya atau mendapati pembayaran pokok dan bunga yang akan diterima terpengaruh
+                oleh beberapa hal. Untuk mengantisipasi resiko tersebut, Anda dapat mempelajari terlebih
+                dahulu resiko-resiko berikut ini untuk kemudian menentukan langkah yang tepat dalam
+                melakukan pendanaan.
+            </p>
+            <div class="section-header">
+                <h3 class="about-title">Resiko Gagal Bayar</h3>
+                <div class="large-2 medium-1 small-4 columns small-centered border-green margin-bottom-20"></div>
+            </div>
+            <p class="text-justify">
+                Dengan fasilitas pendanaan yang ditawarkan oleh saat ini yaitu sistem mitigasi risiko berupa
+                <i>credit-scoring</i>, verifikasi, dan <i>credit-grading</i> yang lengkap sebagai layanan tanpa agunan, namun
+                kemungkinan terjadinya gagal bayar oleh <i>Borrower</i> pada <i>platform</i> kami akan tetap ada. Level
+                akurasi dari <i>credit-scoring</i> dan <i>grading</i> yang kami gunakan juga tidak dapat merefleksikan
+                kondisi dan karakter kredit <i>Borrower</i> secara utuh. Selain itu, <i>Borrower</i> bisa mengalami
+                gagal bayar karena kondisi di luar dugaan seperti sakit keras atau meninggal dunia.
+                <br><br>
+                Oleh karena itu, apabila <i>Peminjam</i> mengalami wanprestasi atau gagal bayar atas pinjamannya,
+                KasXpress akan segera menginformasikan kepada <i>Pemberi Pinjaman</i> dan melakukan usaha-usaha 
+                penagihan kepada <i>Peminjam</i> sebagai komitmen kami untuk mendapatkan penyelesaian yang menguntungkan 
+                bagi semua pihak, terutama <i>Pemberi Pinjaman</i>.
+            </p>
         </div>
+        
+        
     </div>
-
 </section>
 
 @endsection
